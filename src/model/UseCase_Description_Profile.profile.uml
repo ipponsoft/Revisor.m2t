@@ -1,0 +1,1563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MagicDrawProfile="http:///schemas/MagicDrawProfile/_QqgZcDiKEeCW-qoOfX288g/0" xmlns:UseCaseDescriptionProfile="http:///schemas/UseCaseDescriptionProfile/_QqUMMDiKEeCW-qoOfX288g/0" xmlns:ValidationProfile="http:///schemas/ValidationProfile/_Qq9scDiKEeCW-qoOfX288g/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/MagicDrawProfile/_QqgZcDiKEeCW-qoOfX288g/0 UML_Standard_Profile.MagicDraw_Profile.profile.uml#_QrBYfjiKEeCW-qoOfX288g http:///schemas/UseCaseDescriptionProfile/_QqUMMDiKEeCW-qoOfX288g/0 #_QrCm0TiKEeCW-qoOfX288g http:///schemas/ValidationProfile/_Qq9scDiKEeCW-qoOfX288g/0 UML_Standard_Profile.Validation_Profile.profile.uml#_QrDN1ziKEeCW-qoOfX288g">
+  <uml:Profile xmi:id="_be00301_1066743716538_320440_0" name="UseCase Description Profile" metamodelReference="_be00301_1066743716538_320440_0_packageImportcreatedOnLoad">
+    <eAnnotations xmi:id="_QrCm0DiKEeCW-qoOfX288g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <contents xmi:type="ecore:EPackage" xmi:id="_QrCm0TiKEeCW-qoOfX288g" name="UseCaseDescriptionProfile" nsURI="http:///schemas/UseCaseDescriptionProfile/_QqUMMDiKEeCW-qoOfX288g/0" nsPrefix="UseCaseDescriptionProfile">
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_QrCm0jiKEeCW-qoOfX288g" name="useCasePackage">
+          <eAnnotations xmi:id="_QrCm0ziKEeCW-qoOfX288g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_12_1_f00036a_1174033774817_619686_607"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_QrCm1DiKEeCW-qoOfX288g" name="base_Package" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Package"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_QrCm1jiKEeCW-qoOfX288g" name="requirementActor">
+          <eAnnotations xmi:id="_QrCm1ziKEeCW-qoOfX288g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_16_0beta1_1ff304e3_1219974937352_657753_470"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_QrCm2DiKEeCW-qoOfX288g" name="base_Actor" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Actor"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrCm2jiKEeCW-qoOfX288g" name="ActorComplexity" ordered="false" lowerBound="1" eType="_QrCm3DiKEeCW-qoOfX288g" defaultValueLiteral="Average Complexity"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_QrCm3DiKEeCW-qoOfX288g" name="UseCaseComplexityEnumeration">
+          <eAnnotations xmi:id="_QrCm3TiKEeCW-qoOfX288g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_86b026b_1100851337724_79814_2"/>
+          <eLiterals xmi:id="_QrCm3jiKEeCW-qoOfX288g" name="High Complexity"/>
+          <eLiterals xmi:id="_QrCm3ziKEeCW-qoOfX288g" name="Average Complexity" value="1"/>
+          <eLiterals xmi:id="_QrCm4DiKEeCW-qoOfX288g" name="Low Complexity" value="2"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_QrCm4TiKEeCW-qoOfX288g" name="UseCasecustomization">
+          <eAnnotations xmi:id="_QrCm4jiKEeCW-qoOfX288g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_12_1_f00036a_1173967312269_427115_138"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrCm4ziKEeCW-qoOfX288g" name="Description" ordered="false" lowerBound="1"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrCm5DiKEeCW-qoOfX288g" name="General" ordered="false" lowerBound="1"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrCm5TiKEeCW-qoOfX288g" name="Scenarios" ordered="false" lowerBound="1"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_QrCm5jiKEeCW-qoOfX288g" name="UseCasePropertyGroupEnumeration">
+          <eAnnotations xmi:id="_QrCm5ziKEeCW-qoOfX288g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_be00301_1066821693263_457671_100"/>
+          <eLiterals xmi:id="_QrCm6DiKEeCW-qoOfX288g" name="Identity"/>
+          <eLiterals xmi:id="_QrCm6TiKEeCW-qoOfX288g" name="Description" value="1"/>
+          <eLiterals xmi:id="_QrCm6jiKEeCW-qoOfX288g" name="Conditions" value="2"/>
+          <eLiterals xmi:id="_QrCm6ziKEeCW-qoOfX288g" name="Flow of events" value="3"/>
+          <eLiterals xmi:id="_QrCm7DiKEeCW-qoOfX288g" name="Other" value="4"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_QrCm7TiKEeCW-qoOfX288g" name="UseCaseComponentComplexityEnumeration">
+          <eAnnotations xmi:id="_QrCm7jiKEeCW-qoOfX288g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_86b026b_1101133722052_806204_0"/>
+          <eLiterals xmi:id="_QrCm7ziKEeCW-qoOfX288g" name="Average Complexity"/>
+          <eLiterals xmi:id="_QrCm8DiKEeCW-qoOfX288g" name="High Complexity" value="1"/>
+          <eLiterals xmi:id="_QrCm8TiKEeCW-qoOfX288g" name="Low Complexity" value="2"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_QrCm8jiKEeCW-qoOfX288g" name="useCaseModelDiagram">
+          <eAnnotations xmi:id="_QrCm8ziKEeCW-qoOfX288g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_8bb027e_1073897757778_650674_3"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrCm9DiKEeCW-qoOfX288g" name="useCaseModelDiagramID" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_QrCm9jiKEeCW-qoOfX288g" name="base_Diagram" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Element"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_QrCm-DiKEeCW-qoOfX288g" name="grouped">
+          <eAnnotations xmi:id="_QrCm-TiKEeCW-qoOfX288g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_9_0_2_be00301_1112964767577_928108_227"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrCm-jiKEeCW-qoOfX288g" name="UseCasePropertyGroup" ordered="false" lowerBound="1" eType="_QrCm5jiKEeCW-qoOfX288g" defaultValueLiteral="Other"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_QrCm_DiKEeCW-qoOfX288g" name="base_Property" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_QrCm_jiKEeCW-qoOfX288g" name="requirementUseCase">
+          <eAnnotations xmi:id="_QrCm_ziKEeCW-qoOfX288g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_9_0_2_be00301_1112960475215_37141_0"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrCnADiKEeCW-qoOfX288g" name="UseCaseNumber" ordered="false" lowerBound="1" eType="_QrCnLDiKEeCW-qoOfX288g" defaultValueLiteral="1"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrCnAjiKEeCW-qoOfX288g" name="UseCaseComplexity" ordered="false" lowerBound="1" eType="_QrCm3DiKEeCW-qoOfX288g" defaultValueLiteral="Average Complexity"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrCnBDiKEeCW-qoOfX288g" name="Priority" ordered="false" lowerBound="1" eType="_QrCnLjiKEeCW-qoOfX288g" defaultValueLiteral="Normal"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrCnBjiKEeCW-qoOfX288g" name="PreCondition" ordered="false" upperBound="-1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrCnCDiKEeCW-qoOfX288g" name="PostCondition" ordered="false" upperBound="-1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrCnCjiKEeCW-qoOfX288g" name="OutstandingIssue" ordered="false" upperBound="-1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrCnDDiKEeCW-qoOfX288g" name="Notes" ordered="false">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrCnDjiKEeCW-qoOfX288g" name="NonFunctionalRequirements" ordered="false" upperBound="-1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrCnEDiKEeCW-qoOfX288g" name="ImplementationIssues" ordered="false" upperBound="-1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrCnEjiKEeCW-qoOfX288g" name="AlternativeFlowofEvents" ordered="false" upperBound="-1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrCnFDiKEeCW-qoOfX288g" name="Assumption" ordered="false">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_QrCnFjiKEeCW-qoOfX288g" name="AlternativeFlowofEventsDiagrams" ordered="false" upperBound="-1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Element"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrCnGDiKEeCW-qoOfX288g" name="Author" ordered="false">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrCnGjiKEeCW-qoOfX288g" name="BasicFlowofEvents" ordered="false" upperBound="-1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrCnHDiKEeCW-qoOfX288g" name="Date" ordered="false">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrCnHjiKEeCW-qoOfX288g" name="Goal" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_QrCnIDiKEeCW-qoOfX288g" name="ExceptionalFlowofEventsDiagrams" ordered="false" upperBound="-1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Element"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrCnIjiKEeCW-qoOfX288g" name="ExceptionalFlowofEvents" ordered="false" upperBound="-1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_QrCnJDiKEeCW-qoOfX288g" name="BasicFlowofEventsDiagrams" ordered="false" upperBound="-1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Element"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrCnJjiKEeCW-qoOfX288g" name="ComponentComplexity" ordered="false" lowerBound="1" eType="_QrCm7TiKEeCW-qoOfX288g" defaultValueLiteral="Average Complexity"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrCnKDiKEeCW-qoOfX288g" name="ComponentType" ordered="false" lowerBound="1" eType="_QrCnNTiKEeCW-qoOfX288g"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_QrCnKjiKEeCW-qoOfX288g" name="base_UseCase" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//UseCase"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EDataType" xmi:id="_QrCnLDiKEeCW-qoOfX288g" name="UCNumber" instanceClassName="java.lang.String">
+          <eAnnotations xmi:id="_QrCnLTiKEeCW-qoOfX288g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_8ca0285_1071229634089_484535_1"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_QrCnLjiKEeCW-qoOfX288g" name="UseCasePriorityEnumeration">
+          <eAnnotations xmi:id="_QrCnLziKEeCW-qoOfX288g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_be00301_1066820016512_136158_88"/>
+          <eLiterals xmi:id="_QrCnMDiKEeCW-qoOfX288g" name="High"/>
+          <eLiterals xmi:id="_QrCnMTiKEeCW-qoOfX288g" name="Above Normal" value="1"/>
+          <eLiterals xmi:id="_QrCnMjiKEeCW-qoOfX288g" name="Normal" value="2"/>
+          <eLiterals xmi:id="_QrCnMziKEeCW-qoOfX288g" name="Below Normal" value="3"/>
+          <eLiterals xmi:id="_QrCnNDiKEeCW-qoOfX288g" name="Low" value="4"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_QrCnNTiKEeCW-qoOfX288g" name="UseCaseComponentTypeEnumeration">
+          <eAnnotations xmi:id="_QrCnNjiKEeCW-qoOfX288g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_86b026b_1100851680617_991536_7"/>
+          <eLiterals xmi:id="_QrCnNziKEeCW-qoOfX288g" name="External Input"/>
+          <eLiterals xmi:id="_QrCnODiKEeCW-qoOfX288g" name="External Output" value="1"/>
+          <eLiterals xmi:id="_QrCnOTiKEeCW-qoOfX288g" name="External Inquiry" value="2"/>
+          <eLiterals xmi:id="_QrCnOjiKEeCW-qoOfX288g" name="Internal Logical File" value="3"/>
+          <eLiterals xmi:id="_QrCnOziKEeCW-qoOfX288g" name="External Interface File" value="4"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EEnum" xmi:id="_QrCnPDiKEeCW-qoOfX288g" name="RelevanceEnumeration">
+          <eAnnotations xmi:id="_QrCnPTiKEeCW-qoOfX288g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_16_0beta1_1ff304e3_1219974937352_315696_471"/>
+          <eLiterals xmi:id="_QrCnPjiKEeCW-qoOfX288g" name="0"/>
+          <eLiterals xmi:id="_QrCnPziKEeCW-qoOfX288g" name="1" value="1"/>
+          <eLiterals xmi:id="_QrCnQDiKEeCW-qoOfX288g" name="2" value="2"/>
+          <eLiterals xmi:id="_QrCnQTiKEeCW-qoOfX288g" name="3" value="3"/>
+          <eLiterals xmi:id="_QrCnQjiKEeCW-qoOfX288g" name="4" value="4"/>
+          <eLiterals xmi:id="_QrCnQziKEeCW-qoOfX288g" name="5" value="5"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_QrCnRDiKEeCW-qoOfX288g" name="DataModelcustomization">
+          <eAnnotations xmi:id="_QrCnRTiKEeCW-qoOfX288g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_15_5_1ff304e3_1220841366921_334261_662"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrCnRjiKEeCW-qoOfX288g" name="TechnicalFactor" ordered="false" lowerBound="1"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrCnRziKEeCW-qoOfX288g" name="EnvironmentalFactor" ordered="false" lowerBound="1"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_QrCnSDiKEeCW-qoOfX288g" name="UseCasepackagecustomization">
+          <eAnnotations xmi:id="_QrCnSTiKEeCW-qoOfX288g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_12_1_f00036a_1174033756724_517899_606"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_QrCnSjiKEeCW-qoOfX288g" name="UseCaseProjectEstimation">
+          <eAnnotations xmi:id="_QrCnSziKEeCW-qoOfX288g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_15_5_1ff304e3_1220599729768_373865_561"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_QrCnTDiKEeCW-qoOfX288g" name="Actorcustomization">
+          <eAnnotations xmi:id="_QrCnTTiKEeCW-qoOfX288g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_15_5_1ff304e3_1220599009286_486870_495"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_QrCnTjiKEeCW-qoOfX288g" name="UseCaseownercustomization">
+          <eAnnotations xmi:id="_QrCnTziKEeCW-qoOfX288g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_14_0_8760274_1188455323324_759077_350"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_QrCnUDiKEeCW-qoOfX288g" name="actorDiagram">
+          <eAnnotations xmi:id="_QrCnUTiKEeCW-qoOfX288g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_8bb027e_1073897695178_229854_1"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrCnUjiKEeCW-qoOfX288g" name="actorDiagramID" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_QrCnVDiKEeCW-qoOfX288g" name="base_Diagram" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Element"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_QrCnVjiKEeCW-qoOfX288g" name="useCaseOwner">
+          <eAnnotations xmi:id="_QrCnVziKEeCW-qoOfX288g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_9_0_2_be00301_1112964642046_825187_87"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrCnWDiKEeCW-qoOfX288g" name="UCOwnerNumber" ordered="false" lowerBound="1" eType="_QrCnLDiKEeCW-qoOfX288g" defaultValueLiteral="1"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_QrCnWjiKEeCW-qoOfX288g" name="base_Classifier" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Classifier"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_QrCnXDiKEeCW-qoOfX288g" name="base_Package" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Package"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_QrCnXjiKEeCW-qoOfX288g" name="UseCasemodelcustomization">
+          <eAnnotations xmi:id="_QrCnXziKEeCW-qoOfX288g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_12_1_f00036a_1174034260677_999183_652"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_QrCnYDiKEeCW-qoOfX288g" name="useCaseProjectEstimation">
+          <eAnnotations xmi:id="_QrCnYTiKEeCW-qoOfX288g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_16_0beta1_1ff304e3_1219974937336_129049_469"/>
+          <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_QrCnYjiKEeCW-qoOfX288g" name="base_Model" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Model"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrCnZDiKEeCW-qoOfX288g" name="T1DistributedSystem" ordered="false" eType="_QrCnPDiKEeCW-qoOfX288g"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrCnZjiKEeCW-qoOfX288g" name="T2Responseadjectives" ordered="false" eType="_QrCnPDiKEeCW-qoOfX288g"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrCnaDiKEeCW-qoOfX288g" name="T3Enduserefficiency" ordered="false" eType="_QrCnPDiKEeCW-qoOfX288g"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrCnajiKEeCW-qoOfX288g" name="T4Complexprocessing" ordered="false" eType="_QrCnPDiKEeCW-qoOfX288g"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrCnbDiKEeCW-qoOfX288g" name="T5Reusablecode" ordered="false" eType="_QrCnPDiKEeCW-qoOfX288g"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrCnbjiKEeCW-qoOfX288g" name="T6Easytoinstall" ordered="false" eType="_QrCnPDiKEeCW-qoOfX288g"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrCncDiKEeCW-qoOfX288g" name="T7Easytouse" ordered="false" eType="_QrCnPDiKEeCW-qoOfX288g"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrCncjiKEeCW-qoOfX288g" name="T8Portable" ordered="false" eType="_QrCnPDiKEeCW-qoOfX288g"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrDMADiKEeCW-qoOfX288g" name="T9Easytochange" ordered="false" eType="_QrCnPDiKEeCW-qoOfX288g"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrDMAjiKEeCW-qoOfX288g" name="T10Concurrent" ordered="false" eType="_QrCnPDiKEeCW-qoOfX288g"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrDMBDiKEeCW-qoOfX288g" name="T11Securityfeatures" ordered="false" eType="_QrCnPDiKEeCW-qoOfX288g"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrDMBjiKEeCW-qoOfX288g" name="T12Accessforthirdparties" ordered="false" eType="_QrCnPDiKEeCW-qoOfX288g"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrDMCDiKEeCW-qoOfX288g" name="T13Specialtrainingrequired" ordered="false" eType="_QrCnPDiKEeCW-qoOfX288g"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrDMCjiKEeCW-qoOfX288g" name="E1FamiliarwithRUP" ordered="false" eType="_QrCnPDiKEeCW-qoOfX288g"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrDMDDiKEeCW-qoOfX288g" name="E2Applicationexperience" ordered="false" eType="_QrCnPDiKEeCW-qoOfX288g"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrDMDjiKEeCW-qoOfX288g" name="E3Objectorientedexperience" ordered="false" eType="_QrCnPDiKEeCW-qoOfX288g"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrDMEDiKEeCW-qoOfX288g" name="E4Leadanalystcapability" ordered="false" eType="_QrCnPDiKEeCW-qoOfX288g"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrDMEjiKEeCW-qoOfX288g" name="E5Motivation" ordered="false" eType="_QrCnPDiKEeCW-qoOfX288g"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrDMFDiKEeCW-qoOfX288g" name="E6Stablerequirements" ordered="false" eType="_QrCnPDiKEeCW-qoOfX288g"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrDMFjiKEeCW-qoOfX288g" name="E7Parttimeworkers" ordered="false" eType="_QrCnPDiKEeCW-qoOfX288g"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_QrDMGDiKEeCW-qoOfX288g" name="E8Difficultprogramminglanguage" ordered="false" eType="_QrCnPDiKEeCW-qoOfX288g"/>
+        </eClassifiers>
+      </contents>
+    </eAnnotations>
+    <ownedComment xmi:id="_be00301_1078910217878_298351_89" body="UseCase Profile is a collection of TagDefinitions for UseCases used to extend standard UseCase description. Includes properties from RUP and other software development and requirements management processes. These properties/tags will be used in Use Case Report. " annotatedElement="_be00301_1066743716538_320440_0"/>
+    <packageImport xmi:id="_be00301_1066743716538_320440_0_packageImportcreatedOnLoad">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_METAMODELS/UML.metamodel.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:id="_0primitiveTypesUseCase_Description_Profile">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:id="_0javaPrimitiveTypesUseCase_Description_Profile">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_12_1_f00036a_1174034251864_417478_647" name="" memberEnd="_12_1_f00036a_1174034251864_338578_648 _12_1_f00036a_1174034251864_417666_649" navigableOwnedEnd="_12_1_f00036a_1174034251864_417666_649">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_12_1_f00036a_1174034251864_417666_649" name="extension_useCasePackage" visibility="private" type="_12_1_f00036a_1174033774817_619686_607" aggregation="composite" association="_12_1_f00036a_1174034251864_417478_647">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_12_1_f00036a_1174034251864_690233_651" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_12_1_f00036a_1174034251864_692848_650" name=""/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_12_1_f00036a_1174033774817_619686_607" name="useCasePackage">
+      <ownedAttribute xmi:id="_12_1_f00036a_1174034251864_338578_648" name="base_Package" visibility="private" association="_12_1_f00036a_1174034251864_417478_647">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Package"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_16_0beta1_1ff304e3_1219974937352_657753_470" name="requirementActor">
+      <ownedAttribute xmi:id="_16_0beta1_1ff304e3_1219974937508_956496_557" name="base_Actor" visibility="private" association="_16_0beta1_1ff304e3_1219974937508_577284_556">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Actor"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_16_0beta1_1ff304e3_1219974937414_45335_493" name="ActorComplexity" visibility="private" type="_86b026b_1100851337724_79814_2">
+        <eAnnotations xmi:id="_QrDMJziKEeCW-qoOfX288g" source="MagicDraw">
+          <details xmi:id="_QrDMKDiKEeCW-qoOfX288g" key="md_property_name" value="Actor Complexity"/>
+        </eAnnotations>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_0beta1_1ff304e3_1219974937446_2241_545" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_0beta1_1ff304e3_1219974937446_364529_544" name="" value="1"/>
+        <defaultValue xmi:type="uml:InstanceValue" xmi:id="_16_0beta1_1ff304e3_1219974937446_577357_543" name="" instance="_86b026b_1100851488050_713066_5"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_16_0beta1_1ff304e3_1219974937508_577284_556" name="" memberEnd="_16_0beta1_1ff304e3_1219974937508_910440_558 _16_0beta1_1ff304e3_1219974937508_956496_557" navigableOwnedEnd="_16_0beta1_1ff304e3_1219974937508_910440_558">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_16_0beta1_1ff304e3_1219974937508_910440_558" name="extension_requirementActor" visibility="private" type="_16_0beta1_1ff304e3_1219974937352_657753_470" aggregation="composite" association="_16_0beta1_1ff304e3_1219974937508_577284_556">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_0beta1_1ff304e3_1219974937508_553264_560" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_0beta1_1ff304e3_1219974937508_950593_559" name=""/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_86b026b_1100851337724_79814_2" name="UseCase Complexity Enumeration">
+      <ownedLiteral xmi:id="_86b026b_1100851483613_553999_4" name="High Complexity"/>
+      <ownedLiteral xmi:id="_86b026b_1100851488050_713066_5" name="Average Complexity"/>
+      <ownedLiteral xmi:id="_86b026b_1100851490844_205263_6" name="Low Complexity"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_12_1_f00036a_1173967312269_427115_138" name="Use Case customization">
+      <ownedAttribute xmi:id="_12_1_f00036a_1174032470911_490758_483" name="Description" visibility="private"/>
+      <ownedAttribute xmi:id="_12_1_f00036a_1174032470927_837064_484" name="General" visibility="private"/>
+      <ownedAttribute xmi:id="_12_1_f00036a_1174032470927_598945_485" name="Scenarios" visibility="private"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_be00301_1066821693263_457671_100" name="UseCase Property Group Enumeration">
+      <ownedLiteral xmi:id="_be00301_1066821820306_125547_101" name="Identity"/>
+      <ownedLiteral xmi:id="_be00301_1066821820306_381647_102" name="Description"/>
+      <ownedLiteral xmi:id="_be00301_1066821820306_681438_103" name="Conditions"/>
+      <ownedLiteral xmi:id="_be00301_1066821820306_856103_104" name="Flow of events"/>
+      <ownedLiteral xmi:id="_be00301_1066821820306_145303_105" name="Other"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_86b026b_1101133722052_806204_0" name="UseCase Component Complexity Enumeration">
+      <ownedLiteral xmi:id="_86b026b_1101133755370_352268_1" name="Average Complexity"/>
+      <ownedLiteral xmi:id="_86b026b_1101133766206_557083_2" name="High Complexity"/>
+      <ownedLiteral xmi:id="_86b026b_1101133776030_676814_3" name="Low Complexity"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_8bb027e_1073897757778_650674_3" name="useCaseModelDiagram">
+      <ownedAttribute xmi:id="_8bb027e_1073897792047_918194_4" name="useCaseModelDiagramID" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_6beta_8740266_1244615935577_265648_822" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0EAPbeta_62a020a_1120463197479_739399_848" name="" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_10_0EAPbeta_62a020a_1120463197985_395337_951" name="base_Diagram" visibility="private" association="_10_0EAPbeta_62a020a_1120463197985_323178_950">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
+      </ownedAttribute>
+      <icon xmi:id="_10_0EAPbeta_62a020a_1120463197479_517166_847" content="" location="" format=""/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:InstanceValue" xmi:id="_16_0beta1_1ff304e3_1219974937446_783533_550" name="" instance="_be00301_1066821820306_145303_105"/>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_9_0_2_be00301_1112964767577_928108_227" name="grouped">
+      <ownedAttribute xmi:id="_be00301_1066822235323_902656_106" name="UseCasePropertyGroup" visibility="private" type="_be00301_1066821693263_457671_100">
+        <eAnnotations xmi:id="_QrDMSziKEeCW-qoOfX288g" source="MagicDraw">
+          <details xmi:id="_QrDMTDiKEeCW-qoOfX288g" key="md_property_name" value="UseCase Property Group"/>
+        </eAnnotations>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_6beta_8740266_1244615935593_69359_831" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0EAPbeta_62a020a_1120463197601_778292_897" name="" value="1"/>
+        <defaultValue xmi:type="uml:InstanceValue" xmi:id="_10_0EAPbeta_62a020a_1120463197813_524574_902" name="" instance="_be00301_1066821820306_145303_105"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_10_0EAPbeta_62a020a_1120463198027_951254_965" name="base_Property" visibility="private" association="_10_0EAPbeta_62a020a_1120463198027_702793_964">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+      </ownedAttribute>
+      <icon xmi:id="_10_0EAPbeta_62a020a_1120463197601_871546_896" content="" location="" format=""/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_9_0_2_be00301_1112960475215_37141_0" name="requirementUseCase">
+      <ownedAttribute xmi:id="_be00301_1066745578365_771812_27" name="UseCaseNumber" visibility="private" type="_8ca0285_1071229634089_484535_1">
+        <eAnnotations xmi:id="_QrDMVDiKEeCW-qoOfX288g" source="MagicDraw">
+          <details xmi:id="_QrDMVTiKEeCW-qoOfX288g" key="md_property_name" value="UseCase Number"/>
+        </eAnnotations>
+        <ownedComment xmi:id="_be00301_1066745889773_198431_44" body="Unique UseCase number in the package/subsystem scope." annotatedElement="_be00301_1066745578365_771812_27"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_6beta_8740266_1244615935608_88658_842" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0EAPbeta_62a020a_1120463197483_239977_851" name="" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_10_0EAPbeta_62a020a_1120463198021_786770_960" name="" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_86b026b_1100852264416_278032_17" name="UseCaseComplexity" visibility="private" type="_86b026b_1100851337724_79814_2">
+        <eAnnotations xmi:id="_QrDMWziKEeCW-qoOfX288g" source="MagicDraw">
+          <details xmi:id="_QrDMXDiKEeCW-qoOfX288g" key="md_property_name" value="UseCase Complexity"/>
+        </eAnnotations>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_6beta_8740266_1244615935562_636405_817" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0EAPbeta_62a020a_1120463197519_892636_853" name="" value="1"/>
+        <defaultValue xmi:type="uml:InstanceValue" xmi:id="_10_0EAPbeta_62a020a_1120463198045_422611_970" name="" instance="_86b026b_1100851488050_713066_5"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_be00301_1066819978618_241022_86" name="Priority" visibility="private" type="_be00301_1066820016512_136158_88">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_6beta_8740266_1244615935577_711577_828" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0EAPbeta_62a020a_1120463197522_765246_855" name="" value="1"/>
+        <defaultValue xmi:type="uml:InstanceValue" xmi:id="_10_0EAPbeta_62a020a_1120463197977_961989_944" name="" instance="_be00301_1066820307541_976329_94"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_be00301_1069345036881_119566_4" name="PreCondition" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_5beta2_8740266_1238496922724_504300_809" name="" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_5beta2_8740266_1238496922724_507373_808" name=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_be00301_1069345036881_177859_3" name="PostCondition" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_5beta2_8740266_1238496928333_98980_811" name="" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_5beta2_8740266_1238496928333_936734_810" name=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_be00301_1066897101064_466615_101" name="OutstandingIssue" visibility="private">
+        <eAnnotations xmi:id="_QrDMaziKEeCW-qoOfX288g" source="MagicDraw">
+          <details xmi:id="_QrDMbDiKEeCW-qoOfX288g" key="md_property_name" value="Out-standing Issue"/>
+        </eAnnotations>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_5beta2_8740266_1238497056053_570999_817" name="" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_5beta2_8740266_1238497056053_198921_816" name=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_be00301_1066897101074_628189_103" name="Notes" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_0beta1_8f90291_1220956723849_448820_706" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_0beta1_8f90291_1220956723849_209479_705" name=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_be00301_1066897101054_362364_95" name="NonFunctionalRequirements" visibility="private">
+        <eAnnotations xmi:id="_QrDMcziKEeCW-qoOfX288g" source="MagicDraw">
+          <details xmi:id="_QrDMdDiKEeCW-qoOfX288g" key="md_property_name" value="Non Functional Requirements"/>
+        </eAnnotations>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_5beta2_8740266_1238496935974_834758_813" name="" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_5beta2_8740266_1238496935974_535739_812" name=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_be00301_1066897101034_150494_93" name="ImplementationIssues" visibility="private">
+        <eAnnotations xmi:id="_QrDMeDiKEeCW-qoOfX288g" source="MagicDraw">
+          <details xmi:id="_QrDMeTiKEeCW-qoOfX288g" key="md_property_name" value="Implementation Issues"/>
+        </eAnnotations>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_5beta2_8740266_1238497056068_863640_819" name="" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_5beta2_8740266_1238497056068_700313_818" name=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_be00301_1066810372024_418388_155" name="AlternativeFlowofEvents" visibility="private">
+        <eAnnotations xmi:id="_QrDMfTiKEeCW-qoOfX288g" source="MagicDraw">
+          <details xmi:id="_QrDMfjiKEeCW-qoOfX288g" key="md_property_name" value="Alternative Flow of Events"/>
+        </eAnnotations>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_5beta2_8740266_1238497018927_143536_815" name="" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_5beta2_8740266_1238497018927_321743_814" name=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_be00301_1066897101064_364082_97" name="Assumption" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_0beta1_8f90291_1220956741224_726089_716" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_0beta1_8f90291_1220956741224_963732_715" name=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_be00301_1066810372024_338362_156" name="AlternativeFlowofEventsDiagrams" visibility="private">
+        <eAnnotations xmi:id="_QrDMhTiKEeCW-qoOfX288g" source="MagicDraw">
+          <details xmi:id="_QrDMhjiKEeCW-qoOfX288g" key="md_property_name" value="Alternative Flow of Events Diagrams"/>
+        </eAnnotations>
+        <ownedComment xmi:id="_be00301_1066811734313_887107_253" body="References to diagrams." annotatedElement="_be00301_1066810372024_338362_156"/>
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_5beta2_8740266_1238497056084_146714_821" name="" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_5beta2_8740266_1238497056084_104299_820" name=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_be00301_1066744391809_291056_1" name="Author" visibility="private">
+        <ownedComment xmi:id="_be00301_1066745889763_249579_35" body="The author of the UseCase." annotatedElement="_be00301_1066744391809_291056_1"/>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_0beta1_8f90291_1220956747958_829114_720" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_0beta1_8f90291_1220956747958_231289_719" name=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_be00301_1066745578365_161054_31" name="BasicFlowofEvents" visibility="private">
+        <eAnnotations xmi:id="_QrDMjziKEeCW-qoOfX288g" source="MagicDraw">
+          <details xmi:id="_QrDMkDiKEeCW-qoOfX288g" key="md_property_name" value="Basic Flow of Events"/>
+        </eAnnotations>
+        <ownedComment xmi:id="_be00301_1066745889773_549973_50" body="Regular/basic flow of activities of the UseCase." annotatedElement="_be00301_1066745578365_161054_31"/>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_5beta2_8740266_1238497056084_186747_823" name="" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_5beta2_8740266_1238497056084_885926_822" name=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_be00301_1066745578365_232_29" name="Date" visibility="private">
+        <ownedComment xmi:id="_be00301_1066745889773_982136_47" body="UseCase creation/modification or other dates." annotatedElement="_be00301_1066745578365_232_29"/>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_0beta1_8f90291_1220956751818_595866_722" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_0beta1_8f90291_1220956751818_509837_721" name=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_be00301_1066745578365_830651_25" name="Goal" visibility="private">
+        <ownedComment xmi:id="_be00301_1066745889763_295886_41" body="Specifies the goal to be achieved by the UseCase." annotatedElement="_be00301_1066745578365_830651_25"/>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_6beta_8740266_1244615935608_173059_844" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0EAPbeta_62a020a_1120463197574_85303_881" name="" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_be00301_1066813090914_199818_4" name="ExceptionalFlowofEventsDiagrams" visibility="private">
+        <eAnnotations xmi:id="_QrDMnTiKEeCW-qoOfX288g" source="MagicDraw">
+          <details xmi:id="_QrDMnjiKEeCW-qoOfX288g" key="md_property_name" value="Exceptional Flow of Events Diagrams"/>
+        </eAnnotations>
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_5beta2_8740266_1238497056100_422449_825" name="" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_5beta2_8740266_1238497056100_947425_824" name=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_be00301_1066813090914_271384_2" name="ExceptionalFlowofEvents" visibility="private">
+        <eAnnotations xmi:id="_QrDMojiKEeCW-qoOfX288g" source="MagicDraw">
+          <details xmi:id="_QrDMoziKEeCW-qoOfX288g" key="md_property_name" value="Exceptional Flow of Events"/>
+        </eAnnotations>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_5beta2_8740266_1238497056115_443166_827" name="" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_5beta2_8740266_1238497056115_630240_826" name=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_be00301_1066808483999_917377_153" name="BasicFlowofEventsDiagrams" visibility="private">
+        <eAnnotations xmi:id="_QrDMpziKEeCW-qoOfX288g" source="MagicDraw">
+          <details xmi:id="_QrDMqDiKEeCW-qoOfX288g" key="md_property_name" value="Basic Flow of Events Diagrams"/>
+        </eAnnotations>
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_5beta2_8740266_1238497056115_195993_829" name="" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_5beta2_8740266_1238497056115_874339_828" name=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_86b026b_1101133929591_761242_5" name="ComponentComplexity" visibility="private" type="_86b026b_1101133722052_806204_0">
+        <eAnnotations xmi:id="_QrDMrDiKEeCW-qoOfX288g" source="MagicDraw">
+          <details xmi:id="_QrDMrTiKEeCW-qoOfX288g" key="md_property_name" value="Component Complexity"/>
+        </eAnnotations>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_6beta_8740266_1244615935562_530322_819" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0EAPbeta_62a020a_1120463197591_676137_889" name="" value="1"/>
+        <defaultValue xmi:type="uml:InstanceValue" xmi:id="_10_0EAPbeta_62a020a_1120463198048_187621_972" name="" instance="_86b026b_1101133755370_352268_1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_86b026b_1100852264416_178731_18" name="ComponentType" visibility="private" type="_86b026b_1100851680617_991536_7">
+        <eAnnotations xmi:id="_QrDMsjiKEeCW-qoOfX288g" source="MagicDraw">
+          <details xmi:id="_QrDMsziKEeCW-qoOfX288g" key="md_property_name" value="Component Type"/>
+        </eAnnotations>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_6beta_8740266_1244615935577_472432_827" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0EAPbeta_62a020a_1120463197594_845466_891" name="" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_10_0EAPbeta_62a020a_1120463197909_666480_923" name="base_UseCase" visibility="private" association="_10_0EAPbeta_62a020a_1120463197909_845815_922">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#UseCase"/>
+      </ownedAttribute>
+      <icon xmi:id="_10_0EAPbeta_62a020a_1120463197483_874563_850" content="" location="" format=""/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_16_0beta1_1ff304e3_1219974937352_315696_471" name="Relevance Enumeration">
+      <ownedLiteral xmi:id="_16_0beta1_1ff304e3_1219974937414_984122_494" name="0">
+        <ownedComment xmi:id="_16_0beta1_1ff304e3_1219974937446_69029_546" body="No influence" annotatedElement="_16_0beta1_1ff304e3_1219974937414_984122_494"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_16_0beta1_1ff304e3_1219974937414_269250_495" name="1"/>
+      <ownedLiteral xmi:id="_16_0beta1_1ff304e3_1219974937414_996992_496" name="2"/>
+      <ownedLiteral xmi:id="_16_0beta1_1ff304e3_1219974937414_989236_497" name="3">
+        <ownedComment xmi:id="_16_0beta1_1ff304e3_1219974937446_815188_547" body="Average influence" annotatedElement="_16_0beta1_1ff304e3_1219974937414_989236_497"/>
+      </ownedLiteral>
+      <ownedLiteral xmi:id="_16_0beta1_1ff304e3_1219974937414_126954_498" name="4"/>
+      <ownedLiteral xmi:id="_16_0beta1_1ff304e3_1219974937414_8856_499" name="5">
+        <ownedComment xmi:id="_16_0beta1_1ff304e3_1219974937446_575321_548" body="Strong influence" annotatedElement="_16_0beta1_1ff304e3_1219974937414_8856_499"/>
+      </ownedLiteral>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_be00301_1066820016512_136158_88" name="UseCase Priority Enumeration">
+      <ownedLiteral xmi:id="_be00301_1066820307531_539904_89" name="High"/>
+      <ownedLiteral xmi:id="_be00301_1066820307541_890705_93" name="Above Normal"/>
+      <ownedLiteral xmi:id="_be00301_1066820307541_976329_94" name="Normal"/>
+      <ownedLiteral xmi:id="_be00301_1066820307541_1889_95" name="Below Normal"/>
+      <ownedLiteral xmi:id="_be00301_1066820307541_448536_96" name="Low"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_15_5_1ff304e3_1220841366921_334261_662" name="Data Model customization">
+      <ownedAttribute xmi:id="_15_5_1ff304e3_1220842397582_532636_828" name="Technical Factor" visibility="private"/>
+      <ownedAttribute xmi:id="_15_5_1ff304e3_1220842417786_744790_829" name="Environmental Factor" visibility="private"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_12_1_f00036a_1174033756724_517899_606" name="Use Case package customization"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_16_8beta_8f90291_1261576743099_863896_1696" name="Traceability">
+      <packagedElement xmi:type="uml:Package" xmi:id="_16_8beta_8f90291_1261576755505_996823_1698" name="Specification">
+        <packagedElement xmi:type="uml:Class" xmi:id="_16_8_8f90291_1270715760569_791077_5075" name="Use Case Specifying Use Cases ">
+          <ownedAttribute xmi:id="_16_8_8f90291_1270715760584_77314_5104" name="specifyingUseCase" visibility="private" isOrdered="true">
+            <ownedComment xmi:id="_16_8_8f90291_1270715760584_313879_5184" body="The use cases that specifies the given use case in the higher level of abstraction. For example, the business use case specifies the requirements use case." annotatedElement="_16_8_8f90291_1270715760584_77314_5104"/>
+            <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#UseCase"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_8_8f90291_1270715760584_625019_5183" name="" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_8_8f90291_1270715760584_597521_5185" name=""/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_16_9_8f90291_1280308266446_288826_4517" name="Traceability" visibility="private">
+            <qualifier xmi:id="_16_9_8f90291_1280308266446_888691_4518" name="Specification" visibility="private"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_16_8_8f90291_1270715760569_772449_5073" name="Element Specifying Elements">
+          <ownedAttribute xmi:id="_16_8_8f90291_1270715760584_343501_5098" name="specifyingElement" visibility="private" isOrdered="true">
+            <ownedComment xmi:id="_16_8_8f90291_1270715760584_527755_5168" body="Gathers specifying elements from the upper abstraction level." annotatedElement="_16_8_8f90291_1270715760584_343501_5098"/>
+            <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_8_8f90291_1270715760584_264864_5167" name="" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_8_8f90291_1270715760584_963151_5169" name=""/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_16_8_8f90291_1270715760584_253382_5099" name="Traceability" visibility="private">
+            <qualifier xmi:id="_16_8_8f90291_1270715760584_291517_5171" name="Specification" visibility="private"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_16_8_8f90291_1270715760569_58105_5069" name="Classifier Specifying Components">
+          <ownedAttribute xmi:id="_16_8_8f90291_1270715760584_504712_5088" name="specifyingComponent" visibility="private" isOrdered="true">
+            <ownedComment xmi:id="_16_8_8f90291_1270715760584_618283_5140" body="The components that are realized by classifiers through component realization." annotatedElement="_16_8_8f90291_1270715760584_504712_5088"/>
+            <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Component"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_8_8f90291_1270715760584_635462_5139" name="" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_8_8f90291_1270715760584_121768_5141" name=""/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_16_9_8f90291_1280308290728_546444_4596" name="Traceability" visibility="private">
+            <qualifier xmi:id="_16_9_8f90291_1280308290728_163409_4597" name="Specification" visibility="private"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_16_8_8f90291_1270715760569_816414_5072" name="Element All Specifying Elements">
+          <ownedAttribute xmi:id="_16_8_8f90291_1270715760584_183168_5096" name="allSpecifyingElements" visibility="private" isOrdered="true">
+            <ownedComment xmi:id="_16_8_8f90291_1270715760584_453381_5162" body="Transitively gathers specifying elements from all upper abstraction levels." annotatedElement="_16_8_8f90291_1270715760584_183168_5096"/>
+            <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_8_8f90291_1270715760584_849978_5161" name="" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_8_8f90291_1270715760584_577370_5163" name=""/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_16_9_8f90291_1280308289853_150494_4568" name="Traceability" visibility="private">
+            <qualifier xmi:id="_16_9_8f90291_1280308289853_802160_4569" name="Specification" visibility="private"/>
+          </ownedAttribute>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_16_8beta_8f90291_1261576749411_608180_1697" name="Realization">
+        <packagedElement xmi:type="uml:Class" xmi:id="_16_8_8f90291_1270712542437_826372_3304" name="Element All Realizing Elements">
+          <ownedAttribute xmi:id="_16_8_8f90291_1270712542437_244873_3318" name="allRealizingElements" visibility="private" isOrdered="true">
+            <ownedComment xmi:id="_16_8_8f90291_1270712542437_108156_3354" body="Transitively gathers realizing elements from all lower abstraction levels." annotatedElement="_16_8_8f90291_1270712542437_244873_3318"/>
+            <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_8_8f90291_1270712542437_329782_3353" name="" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_8_8f90291_1270712542437_484736_3355" name=""/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_16_9_8f90291_1280308112642_494958_4348" name="Traceability" visibility="private">
+            <qualifier xmi:id="_16_9_8f90291_1280308112642_245005_4349" name="Realization" visibility="private"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_16_8_8f90291_1270712542437_194873_3301" name="Use Case Realizing Use Cases">
+          <ownedAttribute xmi:id="_16_8_8f90291_1270712542437_175255_3310" name="realizingUseCase" visibility="private" isOrdered="true">
+            <ownedComment xmi:id="_16_8_8f90291_1270712542437_271158_3332" body="The realizing use cases of the current use case in the lower level of abstraction thus demonstrating how the use case is implemented. For example, the requirements use case realizes the business use case." annotatedElement="_16_8_8f90291_1270712542437_175255_3310"/>
+            <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#UseCase"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_8_8f90291_1270712542437_430157_3331" name="" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_8_8f90291_1270712542437_889173_3333" name=""/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_16_8_8f90291_1270712542437_73851_3311" name="Traceability" visibility="private">
+            <qualifier xmi:id="_16_8_8f90291_1270712542437_897886_3335" name="Realization" visibility="private"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_16_8_8f90291_1270712542437_606408_3302" name="Use Case Realizing Classes">
+          <ownedAttribute xmi:id="_16_8_8f90291_1270712542437_800453_3313" name="realizingClass" visibility="private" isOrdered="true">
+            <ownedComment xmi:id="_16_8_8f90291_1270712542437_124392_3340" body="Classes representing the use case realization in the Design model." annotatedElement="_16_8_8f90291_1270712542437_800453_3313"/>
+            <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_8_8f90291_1270712542437_915475_3339" name="" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_8_8f90291_1270712542437_238154_3341" name=""/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_16_9_8f90291_1280308183833_331358_4415" name="Traceability" visibility="private">
+            <qualifier xmi:id="_16_9_8f90291_1280308183833_447810_4416" name="Realization" visibility="private"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_16_8beta_8f90291_1263210423593_909420_1602" name="Element Realizing Elements">
+          <ownedAttribute xmi:id="_16_8beta_8f90291_1263210423593_830840_1603" name="realizingElement" visibility="private" isOrdered="true">
+            <ownedComment xmi:id="_16_8beta_8f90291_1263210423593_927317_1607" body="Gathers realizing elements from the lower abstraction level." annotatedElement="_16_8beta_8f90291_1263210423593_830840_1603"/>
+            <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_8beta_8f90291_1263210423593_957676_1606" name="" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_8beta_8f90291_1263210423593_213369_1608" name=""/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_16_8beta_8f90291_1263210423593_32994_1604" name="Traceability" visibility="private">
+            <qualifier xmi:id="_16_8beta_8f90291_1263210423593_411686_1610" name="Realization" visibility="private"/>
+          </ownedAttribute>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_16_9_8f90291_1280305950727_494049_3401" name="Other">
+        <packagedElement xmi:type="uml:Class" xmi:id="_16_8_8f90291_1270712542437_523206_3309" name="All Specific Classifiers">
+          <ownedAttribute xmi:id="_16_8_8f90291_1270712542437_183860_3329" name="allSpecificClassifiers" visibility="private" isOrdered="true">
+            <ownedComment xmi:id="_16_8_8f90291_1270712542437_17168_3386" body="Directly or indirectly inherited classifiers." annotatedElement="_16_8_8f90291_1270712542437_183860_3329"/>
+            <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Classifier"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_8_8f90291_1270712542437_915417_3385" name="" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_8_8f90291_1270712542437_860263_3387" name=""/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_16_9_8f90291_1280307699078_111834_4099" name="Traceability" visibility="private">
+            <qualifier xmi:id="_16_9_8f90291_1280307699078_381342_4100" name="Other" visibility="private"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_16_8_8f90291_1270715760569_342083_5068" name="All General Classifiers">
+          <ownedAttribute xmi:id="_16_8_8f90291_1270715760584_306387_5085" name="allGeneralClassifiers" visibility="private" isOrdered="true">
+            <ownedComment xmi:id="_16_8_8f90291_1270715760584_625848_5132" body="Gathers classifiers from which the current element directly or indirectly inherits." annotatedElement="_16_8_8f90291_1270715760584_306387_5085"/>
+            <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Classifier"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_8_8f90291_1270715760584_744025_5131" name="" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_8_8f90291_1270715760584_101214_5133" name=""/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_16_8_8f90291_1270715760584_833806_5086" name="Traceability" visibility="private">
+            <qualifier xmi:id="_16_8_8f90291_1270715760584_488584_5135" name="Other" visibility="private"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_16_8_8f90291_1270712542437_737411_3305" name="Participates In Interactions">
+          <ownedAttribute xmi:id="_16_8_8f90291_1270712542437_330700_3320" name="participatesInInteraction" visibility="private" isOrdered="true">
+            <ownedComment xmi:id="_16_8_8f90291_1270712542437_14643_3360" body="The interactions wherein the classifier is used as an object type or the interactions that are owned by the classifier." annotatedElement="_16_8_8f90291_1270712542437_330700_3320"/>
+            <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Interaction"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_8_8f90291_1270712542437_243750_3359" name="" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_8_8f90291_1270712542437_985596_3361" name=""/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_16_9_8f90291_1280307700844_509254_4161" name="Traceability" visibility="private">
+            <qualifier xmi:id="_16_9_8f90291_1280307700844_432704_4162" name="Other" visibility="private"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_16_8_8f90291_1270712542437_435487_3306" name="Specific Classifiers">
+          <ownedAttribute xmi:id="_16_8_8f90291_1270712542437_12157_3322" name="specificClassifier" visibility="private" isOrdered="true">
+            <ownedComment xmi:id="_16_8_8f90291_1270712542437_297120_3366" body="Directly inherited classifiers." annotatedElement="_16_8_8f90291_1270712542437_12157_3322"/>
+            <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Classifier"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_8_8f90291_1270712542437_317905_3365" name="" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_8_8f90291_1270712542437_26579_3367" name=""/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_16_9_8f90291_1280307701781_558249_4192" name="Traceability" visibility="private">
+            <qualifier xmi:id="_16_9_8f90291_1280307701781_591262_4193" name="Other" visibility="private"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_16_8beta_8f90291_1261576793412_813911_1746" name="Describing Behaviors">
+          <ownedAttribute xmi:id="_16_8beta_8f90291_1261576793412_534712_1747" name="describingBehavior" visibility="private" isOrdered="true">
+            <ownedComment xmi:id="_16_8beta_8f90291_1261576793412_757292_1750" body="Behaviors and behavior diagrams (state, activity, sequence, communication, and interaction), which describe the use case" annotatedElement="_16_8beta_8f90291_1261576793412_534712_1747"/>
+            <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_8beta_8f90291_1261576793412_271245_1749" name="" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_8beta_8f90291_1261576793412_953299_1751" name=""/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_16_8beta_8f90291_1261576764318_241513_1701" name="Traceability" visibility="private">
+            <qualifier xmi:id="_16_8beta_8f90291_1261576764318_370580_1707" name="Other" visibility="private"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_16_8_8f90291_1270712542437_413036_3307" name="Participates In Activities">
+          <ownedAttribute xmi:id="_16_8_8f90291_1270712542437_508001_3324" name="participatesInActivity" visibility="private" isOrdered="true">
+            <ownedComment xmi:id="_16_8_8f90291_1270712542437_893963_3372" body="Activities wherein the classifier is used as an object type or the activities that are owned by the classifier." annotatedElement="_16_8_8f90291_1270712542437_508001_3324"/>
+            <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Activity"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_8_8f90291_1270712542437_939152_3371" name="" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_8_8f90291_1270712542437_699085_3373" name=""/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_16_9_8f90291_1280307700078_59809_4130" name="Traceability" visibility="private">
+            <qualifier xmi:id="_16_9_8f90291_1280307700078_485759_4131" name="Other" visibility="private"/>
+          </ownedAttribute>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_10_0EAPbeta_62a020a_1120463197985_323178_950" name="" memberEnd="_10_0EAPbeta_62a020a_1120463197989_305932_952 _10_0EAPbeta_62a020a_1120463197985_395337_951" navigableOwnedEnd="_10_0EAPbeta_62a020a_1120463197989_305932_952">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_10_0EAPbeta_62a020a_1120463197989_305932_952" name="extension_useCaseModelDiagram" visibility="private" type="_8bb027e_1073897757778_650674_3" aggregation="composite" association="_10_0EAPbeta_62a020a_1120463197985_323178_950">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_10_0EAPbeta_62a020a_1120463197991_476859_954" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0EAPbeta_62a020a_1120463197989_183458_953" name=""/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_15_5_1ff304e3_1220599729768_373865_561" name="UseCaseProjectEstimation"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_15_5_1ff304e3_1220599009286_486870_495" name="Actor customization"/>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_10_0EAPbeta_62a020a_1120463197949_664292_932" name="" memberEnd="_10_0EAPbeta_62a020a_1120463197952_891116_934 _10_0EAPbeta_62a020a_1120463197949_890532_933" navigableOwnedEnd="_10_0EAPbeta_62a020a_1120463197952_891116_934">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_10_0EAPbeta_62a020a_1120463197952_891116_934" name="extension_useCaseOwner" visibility="private" type="_9_0_2_be00301_1112964642046_825187_87" aggregation="composite" association="_10_0EAPbeta_62a020a_1120463197949_664292_932">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_10_0EAPbeta_62a020a_1120463197954_212251_936" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0EAPbeta_62a020a_1120463197953_613701_935" name=""/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_8ca0285_1071229634089_484535_1" name="UCNumber"/>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_16_0beta1_1ff304e3_1219974937477_919837_551" name="" memberEnd="_16_0beta1_1ff304e3_1219974937477_22915_553 _16_0beta1_1ff304e3_1219974937477_688210_552" navigableOwnedEnd="_16_0beta1_1ff304e3_1219974937477_22915_553">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_16_0beta1_1ff304e3_1219974937477_22915_553" name="extension_useCaseProjectEstimation" visibility="private" type="_16_0beta1_1ff304e3_1219974937336_129049_469" aggregation="composite" association="_16_0beta1_1ff304e3_1219974937477_919837_551">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_0beta1_1ff304e3_1219974937477_196495_555" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_0beta1_1ff304e3_1219974937477_527396_554" name=""/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_10_0EAPbeta_62a020a_1120463197909_845815_922" name="" memberEnd="_10_0EAPbeta_62a020a_1120463197912_357028_924 _10_0EAPbeta_62a020a_1120463197909_666480_923" navigableOwnedEnd="_10_0EAPbeta_62a020a_1120463197912_357028_924">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_10_0EAPbeta_62a020a_1120463197912_357028_924" name="extension_requirementUseCase" visibility="private" type="_9_0_2_be00301_1112960475215_37141_0" aggregation="composite" association="_10_0EAPbeta_62a020a_1120463197909_845815_922">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_10_0EAPbeta_62a020a_1120463197914_609286_926" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0EAPbeta_62a020a_1120463197912_385154_925" name=""/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_14_0_8760274_1188455323324_759077_350" name="Use Case owner customization"/>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_10_0EAPbeta_62a020a_1120463197816_932084_903" name="" memberEnd="_10_0EAPbeta_62a020a_1120463197816_608284_904 _10_0EAPbeta_62a020a_1120463197819_789152_905" navigableOwnedEnd="_10_0EAPbeta_62a020a_1120463197819_789152_905">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_10_0EAPbeta_62a020a_1120463197819_789152_905" name="extension_actorDiagram" visibility="private" type="_8bb027e_1073897695178_229854_1" aggregation="composite" association="_10_0EAPbeta_62a020a_1120463197816_932084_903">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_10_0EAPbeta_62a020a_1120463197832_885239_907" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0EAPbeta_62a020a_1120463197820_719472_906" name=""/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_8bb027e_1073897695178_229854_1" name="actorDiagram">
+      <ownedAttribute xmi:id="_8bb027e_1073897752240_782641_2" name="actorDiagramID" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_6beta_8740266_1244615935593_651929_839" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0EAPbeta_62a020a_1120463197466_754617_845" name="" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_10_0EAPbeta_62a020a_1120463197816_608284_904" name="base_Diagram" visibility="private" association="_10_0EAPbeta_62a020a_1120463197816_932084_903">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
+      </ownedAttribute>
+      <icon xmi:id="_10_0EAPbeta_62a020a_1120463197466_729377_844" content="" location="" format=""/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_10_0EAPbeta_62a020a_1120463198027_702793_964" name="" memberEnd="_10_0EAPbeta_62a020a_1120463198031_666010_966 _10_0EAPbeta_62a020a_1120463198027_951254_965" navigableOwnedEnd="_10_0EAPbeta_62a020a_1120463198031_666010_966">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_10_0EAPbeta_62a020a_1120463198031_666010_966" name="extension_grouped" visibility="private" type="_9_0_2_be00301_1112964767577_928108_227" aggregation="composite" association="_10_0EAPbeta_62a020a_1120463198027_702793_964">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_10_0EAPbeta_62a020a_1120463198032_574791_968" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0EAPbeta_62a020a_1120463198031_876535_967" name=""/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_9_0_2_be00301_1112964642046_825187_87" name="useCaseOwner">
+      <ownedAttribute xmi:id="8bb027e_1059464789961_56571_133" name="UCOwnerNumber" visibility="private" type="_8ca0285_1071229634089_484535_1">
+        <eAnnotations xmi:id="_QrDNVjiKEeCW-qoOfX288g" source="MagicDraw">
+          <details xmi:id="_QrDNVziKEeCW-qoOfX288g" key="md_property_name" value="UCOwner Number"/>
+        </eAnnotations>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_6beta_8740266_1244615935577_325018_829" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0EAPbeta_62a020a_1120463197598_575278_894" name="" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_10_0EAPbeta_62a020a_1120463197801_736815_900" name="" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_10_0EAPbeta_62a020a_1120463197924_178371_928" name="base_Classifier" visibility="private" association="_10_0EAPbeta_62a020a_1120463197924_969328_927">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Classifier"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_10_0EAPbeta_62a020a_1120463197949_890532_933" name="base_Package" visibility="private" association="_10_0EAPbeta_62a020a_1120463197949_664292_932">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Package"/>
+      </ownedAttribute>
+      <icon xmi:id="_10_0EAPbeta_62a020a_1120463197598_339201_893" content="" location="" format=""/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_12_1_f00036a_1174034260677_999183_652" name="Use Case model customization"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_86b026b_1100851680617_991536_7" name="UseCase Component Type Enumeration">
+      <ownedLiteral xmi:id="_86b026b_1100851712032_531020_8" name="External Input"/>
+      <ownedLiteral xmi:id="_86b026b_1100851724280_450528_9" name="External Output"/>
+      <ownedLiteral xmi:id="_86b026b_1100851892441_461541_10" name="External Inquiry"/>
+      <ownedLiteral xmi:id="_86b026b_1100851892451_202346_13" name="Internal Logical File"/>
+      <ownedLiteral xmi:id="_86b026b_1100851892451_468705_14" name="External Interface File"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_10_0EAPbeta_62a020a_1120463197924_969328_927" name="" memberEnd="_10_0EAPbeta_62a020a_1120463197931_347799_929 _10_0EAPbeta_62a020a_1120463197924_178371_928" navigableOwnedEnd="_10_0EAPbeta_62a020a_1120463197931_347799_929">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_10_0EAPbeta_62a020a_1120463197931_347799_929" name="extension_useCaseOwner" visibility="private" type="_9_0_2_be00301_1112964642046_825187_87" aggregation="composite" association="_10_0EAPbeta_62a020a_1120463197924_969328_927">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_10_0EAPbeta_62a020a_1120463197932_587002_931" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_10_0EAPbeta_62a020a_1120463197931_863811_930" name=""/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_16_0beta1_1ff304e3_1219974937336_129049_469" name="useCaseProjectEstimation">
+      <ownedAttribute xmi:id="_16_0beta1_1ff304e3_1219974937477_688210_552" name="base_Model" visibility="private" association="_16_0beta1_1ff304e3_1219974937477_919837_551">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Model"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_16_0beta1_1ff304e3_1219974937352_501986_472" name="T1DistributedSystem" visibility="private" type="_16_0beta1_1ff304e3_1219974937352_315696_471">
+        <eAnnotations xmi:id="_QrDNbDiKEeCW-qoOfX288g" source="MagicDraw">
+          <details xmi:id="_QrDNbTiKEeCW-qoOfX288g" key="md_property_name" value="T1 Distributed System"/>
+        </eAnnotations>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_0beta1_1ff304e3_1219974937414_943435_501" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_0beta1_1ff304e3_1219974937414_831161_500" name=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_16_0beta1_1ff304e3_1219974937352_909652_473" name="T2Responseadjectives" visibility="private" type="_16_0beta1_1ff304e3_1219974937352_315696_471">
+        <eAnnotations xmi:id="_QrDNcTiKEeCW-qoOfX288g" source="MagicDraw">
+          <details xmi:id="_QrDNcjiKEeCW-qoOfX288g" key="md_property_name" value="T2 Response adjectives"/>
+        </eAnnotations>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_0beta1_1ff304e3_1219974937414_258469_503" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_0beta1_1ff304e3_1219974937414_775409_502" name=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_16_0beta1_1ff304e3_1219974937352_11220_474" name="T3Enduserefficiency" visibility="private" type="_16_0beta1_1ff304e3_1219974937352_315696_471">
+        <eAnnotations xmi:id="_QrDNdjiKEeCW-qoOfX288g" source="MagicDraw">
+          <details xmi:id="_QrDNdziKEeCW-qoOfX288g" key="md_property_name" value="T3 End-user efficiency"/>
+        </eAnnotations>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_0beta1_1ff304e3_1219974937414_337357_505" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_0beta1_1ff304e3_1219974937414_619565_504" name=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_16_0beta1_1ff304e3_1219974937352_704723_475" name="T4Complexprocessing" visibility="private" type="_16_0beta1_1ff304e3_1219974937352_315696_471">
+        <eAnnotations xmi:id="_QrDNeziKEeCW-qoOfX288g" source="MagicDraw">
+          <details xmi:id="_QrDNfDiKEeCW-qoOfX288g" key="md_property_name" value="T4 Complex processing"/>
+        </eAnnotations>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_0beta1_1ff304e3_1219974937414_257119_507" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_0beta1_1ff304e3_1219974937414_292523_506" name=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_16_0beta1_1ff304e3_1219974937352_50718_476" name="T5Reusablecode" visibility="private" type="_16_0beta1_1ff304e3_1219974937352_315696_471">
+        <eAnnotations xmi:id="_QrDNgDiKEeCW-qoOfX288g" source="MagicDraw">
+          <details xmi:id="_QrDNgTiKEeCW-qoOfX288g" key="md_property_name" value="T5 Reusable code"/>
+        </eAnnotations>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_0beta1_1ff304e3_1219974937414_185862_509" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_0beta1_1ff304e3_1219974937414_905078_508" name=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_16_0beta1_1ff304e3_1219974937352_700828_477" name="T6Easytoinstall" visibility="private" type="_16_0beta1_1ff304e3_1219974937352_315696_471">
+        <eAnnotations xmi:id="_QrDNhTiKEeCW-qoOfX288g" source="MagicDraw">
+          <details xmi:id="_QrDNhjiKEeCW-qoOfX288g" key="md_property_name" value="T6 Easy to install"/>
+        </eAnnotations>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_0beta1_1ff304e3_1219974937414_475178_511" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_0beta1_1ff304e3_1219974937414_939191_510" name=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_16_0beta1_1ff304e3_1219974937367_320113_478" name="T7Easytouse" visibility="private" type="_16_0beta1_1ff304e3_1219974937352_315696_471">
+        <eAnnotations xmi:id="_QrDNijiKEeCW-qoOfX288g" source="MagicDraw">
+          <details xmi:id="_QrDNiziKEeCW-qoOfX288g" key="md_property_name" value="T7 Easy to use"/>
+        </eAnnotations>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_0beta1_1ff304e3_1219974937414_253953_513" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_0beta1_1ff304e3_1219974937414_308141_512" name=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_16_0beta1_1ff304e3_1219974937367_666784_479" name="T8Portable" visibility="private" type="_16_0beta1_1ff304e3_1219974937352_315696_471">
+        <eAnnotations xmi:id="_QrDNjziKEeCW-qoOfX288g" source="MagicDraw">
+          <details xmi:id="_QrDNkDiKEeCW-qoOfX288g" key="md_property_name" value="T8 Portable"/>
+        </eAnnotations>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_0beta1_1ff304e3_1219974937414_427103_515" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_0beta1_1ff304e3_1219974937414_992408_514" name=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_16_0beta1_1ff304e3_1219974937367_472626_480" name="T9Easytochange" visibility="private" type="_16_0beta1_1ff304e3_1219974937352_315696_471">
+        <eAnnotations xmi:id="_QrDNlDiKEeCW-qoOfX288g" source="MagicDraw">
+          <details xmi:id="_QrDNlTiKEeCW-qoOfX288g" key="md_property_name" value="T9 Easy to change"/>
+        </eAnnotations>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_0beta1_1ff304e3_1219974937414_624370_517" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_0beta1_1ff304e3_1219974937414_674931_516" name=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_16_0beta1_1ff304e3_1219974937367_651507_481" name="T10Concurrent" visibility="private" type="_16_0beta1_1ff304e3_1219974937352_315696_471">
+        <eAnnotations xmi:id="_QrDNmTiKEeCW-qoOfX288g" source="MagicDraw">
+          <details xmi:id="_QrDNmjiKEeCW-qoOfX288g" key="md_property_name" value="T10 Concurrent"/>
+        </eAnnotations>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_0beta1_1ff304e3_1219974937414_651621_519" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_0beta1_1ff304e3_1219974937414_596415_518" name=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_16_0beta1_1ff304e3_1219974937367_112104_482" name="T11Securityfeatures" visibility="private" type="_16_0beta1_1ff304e3_1219974937352_315696_471">
+        <eAnnotations xmi:id="_QrDNnjiKEeCW-qoOfX288g" source="MagicDraw">
+          <details xmi:id="_QrDNnziKEeCW-qoOfX288g" key="md_property_name" value="T11 Security features"/>
+        </eAnnotations>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_0beta1_1ff304e3_1219974937414_82198_521" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_0beta1_1ff304e3_1219974937414_461867_520" name=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_16_0beta1_1ff304e3_1219974937367_969172_483" name="T12Accessforthirdparties" visibility="private" type="_16_0beta1_1ff304e3_1219974937352_315696_471">
+        <eAnnotations xmi:id="_QrDNoziKEeCW-qoOfX288g" source="MagicDraw">
+          <details xmi:id="_QrDNpDiKEeCW-qoOfX288g" key="md_property_name" value="T12 Access for third parties"/>
+        </eAnnotations>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_0beta1_1ff304e3_1219974937414_641129_523" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_0beta1_1ff304e3_1219974937414_904625_522" name=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_16_0beta1_1ff304e3_1219974937367_746253_484" name="T13Specialtrainingrequired" visibility="private" type="_16_0beta1_1ff304e3_1219974937352_315696_471">
+        <eAnnotations xmi:id="_QrDNqDiKEeCW-qoOfX288g" source="MagicDraw">
+          <details xmi:id="_QrDNqTiKEeCW-qoOfX288g" key="md_property_name" value="T13 Special training required"/>
+        </eAnnotations>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_0beta1_1ff304e3_1219974937414_223711_525" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_0beta1_1ff304e3_1219974937414_770286_524" name=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_16_0beta1_1ff304e3_1219974937367_43241_485" name="E1FamiliarwithRUP" visibility="private" type="_16_0beta1_1ff304e3_1219974937352_315696_471">
+        <eAnnotations xmi:id="_QrDNrTiKEeCW-qoOfX288g" source="MagicDraw">
+          <details xmi:id="_QrDNrjiKEeCW-qoOfX288g" key="md_property_name" value="E1 Familiar with RUP"/>
+        </eAnnotations>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_0beta1_1ff304e3_1219974937414_635864_527" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_0beta1_1ff304e3_1219974937414_352462_526" name=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_16_0beta1_1ff304e3_1219974937399_937663_486" name="E2Applicationexperience" visibility="private" type="_16_0beta1_1ff304e3_1219974937352_315696_471">
+        <eAnnotations xmi:id="_QrDNsjiKEeCW-qoOfX288g" source="MagicDraw">
+          <details xmi:id="_QrDNsziKEeCW-qoOfX288g" key="md_property_name" value="E2 Application experience"/>
+        </eAnnotations>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_0beta1_1ff304e3_1219974937414_221145_529" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_0beta1_1ff304e3_1219974937414_993004_528" name=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_16_0beta1_1ff304e3_1219974937399_453737_487" name="E3Objectorientedexperience" visibility="private" type="_16_0beta1_1ff304e3_1219974937352_315696_471">
+        <eAnnotations xmi:id="_QrDNtziKEeCW-qoOfX288g" source="MagicDraw">
+          <details xmi:id="_QrDNuDiKEeCW-qoOfX288g" key="md_property_name" value="E3 Object-oriented experience"/>
+        </eAnnotations>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_0beta1_1ff304e3_1219974937414_363433_531" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_0beta1_1ff304e3_1219974937414_964694_530" name=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_16_0beta1_1ff304e3_1219974937399_980338_488" name="E4Leadanalystcapability" visibility="private" type="_16_0beta1_1ff304e3_1219974937352_315696_471">
+        <eAnnotations xmi:id="_QrDNvDiKEeCW-qoOfX288g" source="MagicDraw">
+          <details xmi:id="_QrDNvTiKEeCW-qoOfX288g" key="md_property_name" value="E4 Lead analyst capability"/>
+        </eAnnotations>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_0beta1_1ff304e3_1219974937414_730734_533" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_0beta1_1ff304e3_1219974937414_863556_532" name=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_16_0beta1_1ff304e3_1219974937399_53764_489" name="E5Motivation" visibility="private" type="_16_0beta1_1ff304e3_1219974937352_315696_471">
+        <eAnnotations xmi:id="_QrDNwTiKEeCW-qoOfX288g" source="MagicDraw">
+          <details xmi:id="_QrDNwjiKEeCW-qoOfX288g" key="md_property_name" value="E5 Motivation"/>
+        </eAnnotations>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_0beta1_1ff304e3_1219974937414_608_535" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_0beta1_1ff304e3_1219974937414_445596_534" name=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_16_0beta1_1ff304e3_1219974937414_439468_490" name="E6Stablerequirements" visibility="private" type="_16_0beta1_1ff304e3_1219974937352_315696_471">
+        <eAnnotations xmi:id="_QrDNxjiKEeCW-qoOfX288g" source="MagicDraw">
+          <details xmi:id="_QrDNxziKEeCW-qoOfX288g" key="md_property_name" value="E6 Stable requirements"/>
+        </eAnnotations>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_0beta1_1ff304e3_1219974937414_518241_537" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_0beta1_1ff304e3_1219974937414_809261_536" name=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_16_0beta1_1ff304e3_1219974937414_707432_491" name="E7Parttimeworkers" visibility="private" type="_16_0beta1_1ff304e3_1219974937352_315696_471">
+        <eAnnotations xmi:id="_QrDNyziKEeCW-qoOfX288g" source="MagicDraw">
+          <details xmi:id="_QrDNzDiKEeCW-qoOfX288g" key="md_property_name" value="E7 Part time workers"/>
+        </eAnnotations>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_0beta1_1ff304e3_1219974937446_861788_539" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_0beta1_1ff304e3_1219974937414_426226_538" name=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_16_0beta1_1ff304e3_1219974937414_592661_492" name="E8Difficultprogramminglanguage" visibility="private" type="_16_0beta1_1ff304e3_1219974937352_315696_471">
+        <eAnnotations xmi:id="_QrDN0DiKEeCW-qoOfX288g" source="MagicDraw">
+          <details xmi:id="_QrDN0TiKEeCW-qoOfX288g" key="md_property_name" value="E8 Difficult programming language"/>
+        </eAnnotations>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_0beta1_1ff304e3_1219974937446_994425_541" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_0beta1_1ff304e3_1219974937446_900892_540" name=""/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_12_5_1_8f90291_1188999322162_613487_99" name="Use Case domain constraints"/>
+    <profileApplication xmi:id="_be00301_1066743716538_320440_0profileApplicationUseCase_Description_Profile" appliedProfile="_be00301_1066743716538_320440_0">
+      <eAnnotations xmi:id="_QrfQ5jiKEeCW-qoOfX288g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_QrCm0TiKEeCW-qoOfX288g"/>
+    </profileApplication>
+    <profileApplication xmi:id="_be00301_1073394351331_445580_2profileApplicationUseCase_Description_Profile">
+      <eAnnotations xmi:id="_QrkwcjiKEeCW-qoOfX288g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml#_QrBYfjiKEeCW-qoOfX288g"/>
+      </eAnnotations>
+      <appliedProfile href="UML_Standard_Profile.MagicDraw_Profile.profile.uml#_be00301_1073394351331_445580_2"/>
+    </profileApplication>
+    <profileApplication xmi:id="_11_5_f720368_1159529670215_231387_1profileApplicationUseCase_Description_Profile">
+      <eAnnotations xmi:id="_QsO3wDiKEeCW-qoOfX288g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UML_Standard_Profile.Validation_Profile.profile.uml#_QrDN1ziKEeCW-qoOfX288g"/>
+      </eAnnotations>
+      <appliedProfile href="UML_Standard_Profile.Validation_Profile.profile.uml#_11_5_f720368_1159529670215_231387_1"/>
+    </profileApplication>
+  </uml:Profile>
+  <UseCaseDescriptionProfile:grouped xmi:id="_QrgfADiKEeCW-qoOfX288g" UseCasePropertyGroup="Description" base_Property="_be00301_1066897101054_362364_95"/>
+  <UseCaseDescriptionProfile:grouped xmi:id="_QrhGEDiKEeCW-qoOfX288g" base_Property="_86b026b_1100852264416_178731_18"/>
+  <UseCaseDescriptionProfile:grouped xmi:id="_QrhGETiKEeCW-qoOfX288g" UseCasePropertyGroup="Identity" base_Property="_be00301_1066819978618_241022_86"/>
+  <UseCaseDescriptionProfile:grouped xmi:id="_QrhGEjiKEeCW-qoOfX288g" base_Property="_be00301_1066897101064_466615_101"/>
+  <UseCaseDescriptionProfile:grouped xmi:id="_QrhGEziKEeCW-qoOfX288g" UseCasePropertyGroup="Description" base_Property="_be00301_1066897101074_628189_103"/>
+  <UseCaseDescriptionProfile:grouped xmi:id="_QrhGFDiKEeCW-qoOfX288g" UseCasePropertyGroup="Flow of events" base_Property="_be00301_1066810372024_338362_156"/>
+  <UseCaseDescriptionProfile:grouped xmi:id="_QrhGFTiKEeCW-qoOfX288g" UseCasePropertyGroup="Flow of events" base_Property="_be00301_1066810372024_418388_155"/>
+  <UseCaseDescriptionProfile:grouped xmi:id="_QrhGFjiKEeCW-qoOfX288g" base_Property="_be00301_1066897101064_364082_97"/>
+  <UseCaseDescriptionProfile:grouped xmi:id="_QrhGFziKEeCW-qoOfX288g" UseCasePropertyGroup="Conditions" base_Property="_be00301_1069345036881_177859_3"/>
+  <UseCaseDescriptionProfile:grouped xmi:id="_QrhGGDiKEeCW-qoOfX288g" UseCasePropertyGroup="Description" base_Property="_be00301_1066897101034_150494_93"/>
+  <UseCaseDescriptionProfile:grouped xmi:id="_QrhtIDiKEeCW-qoOfX288g" UseCasePropertyGroup="Identity" base_Property="_be00301_1066744391809_291056_1"/>
+  <UseCaseDescriptionProfile:grouped xmi:id="_QrhtITiKEeCW-qoOfX288g" UseCasePropertyGroup="Conditions" base_Property="_be00301_1069345036881_119566_4"/>
+  <UseCaseDescriptionProfile:grouped xmi:id="_QrhtIjiKEeCW-qoOfX288g" UseCasePropertyGroup="Description" base_Property="_be00301_1066745578365_830651_25"/>
+  <UseCaseDescriptionProfile:grouped xmi:id="_QrhtIziKEeCW-qoOfX288g" UseCasePropertyGroup="Flow of events" base_Property="_be00301_1066808483999_917377_153"/>
+  <UseCaseDescriptionProfile:grouped xmi:id="_QrhtJDiKEeCW-qoOfX288g" base_Property="_86b026b_1100852264416_278032_17"/>
+  <UseCaseDescriptionProfile:grouped xmi:id="_QrhtJTiKEeCW-qoOfX288g" UseCasePropertyGroup="Flow of events" base_Property="_be00301_1066745578365_161054_31"/>
+  <UseCaseDescriptionProfile:grouped xmi:id="_QrhtJjiKEeCW-qoOfX288g" base_Property="_86b026b_1101133929591_761242_5"/>
+  <UseCaseDescriptionProfile:grouped xmi:id="_QrhtJziKEeCW-qoOfX288g" UseCasePropertyGroup="Flow of events" base_Property="_be00301_1066813090914_271384_2"/>
+  <UseCaseDescriptionProfile:grouped xmi:id="_QrhtKDiKEeCW-qoOfX288g" UseCasePropertyGroup="Identity" base_Property="_be00301_1066745578365_232_29"/>
+  <UseCaseDescriptionProfile:grouped xmi:id="_QrhtKTiKEeCW-qoOfX288g" UseCasePropertyGroup="Flow of events" base_Property="_be00301_1066813090914_199818_4"/>
+  <MagicDrawProfile:auxiliaryResource xmi:id="_Qrl-kDiKEeCW-qoOfX288g" base_Element="_be00301_1066743716538_320440_0" base_Package="_be00301_1066743716538_320440_0"/>
+  <MagicDrawProfile:auxiliaryResource xmi:id="_Qrl-kTiKEeCW-qoOfX288g" base_Element="_12_5_1_8f90291_1188999322162_613487_99" base_Package="_12_5_1_8f90291_1188999322162_613487_99"/>
+  <MagicDrawProfile:InvisibleStereotype xmi:id="_QrmloDiKEeCW-qoOfX288g" base_Element="_be00301_1066897101054_362364_95"/>
+  <MagicDrawProfile:InvisibleStereotype xmi:id="_QrmloTiKEeCW-qoOfX288g" base_Element="_86b026b_1100852264416_178731_18"/>
+  <MagicDrawProfile:InvisibleStereotype xmi:id="_QrmlojiKEeCW-qoOfX288g" base_Element="_be00301_1066819978618_241022_86"/>
+  <MagicDrawProfile:InvisibleStereotype xmi:id="_QrmloziKEeCW-qoOfX288g" base_Element="_be00301_1066897101064_466615_101"/>
+  <MagicDrawProfile:InvisibleStereotype xmi:id="_QrmlpDiKEeCW-qoOfX288g" base_Element="_be00301_1066897101074_628189_103"/>
+  <MagicDrawProfile:InvisibleStereotype xmi:id="_QrmlpTiKEeCW-qoOfX288g" base_Element="_16_0beta1_1ff304e3_1219974937414_45335_493"/>
+  <MagicDrawProfile:InvisibleStereotype xmi:id="_QrmlpjiKEeCW-qoOfX288g" base_Element="_be00301_1066810372024_338362_156"/>
+  <MagicDrawProfile:InvisibleStereotype xmi:id="_QrmlpziKEeCW-qoOfX288g" base_Element="_be00301_1066810372024_418388_155"/>
+  <MagicDrawProfile:InvisibleStereotype xmi:id="_QrmlqDiKEeCW-qoOfX288g" base_Element="_be00301_1066897101064_364082_97"/>
+  <MagicDrawProfile:InvisibleStereotype xmi:id="_QrmlqTiKEeCW-qoOfX288g" base_Element="_be00301_1069345036881_177859_3"/>
+  <MagicDrawProfile:InvisibleStereotype xmi:id="_QrnMsDiKEeCW-qoOfX288g" base_Element="_be00301_1066897101034_150494_93"/>
+  <MagicDrawProfile:InvisibleStereotype xmi:id="_QrnMsTiKEeCW-qoOfX288g" base_Element="_be00301_1066744391809_291056_1"/>
+  <MagicDrawProfile:InvisibleStereotype xmi:id="_QrnMsjiKEeCW-qoOfX288g" base_Element="_be00301_1066822235323_902656_106"/>
+  <MagicDrawProfile:InvisibleStereotype xmi:id="_QrnMsziKEeCW-qoOfX288g" base_Element="_be00301_1069345036881_119566_4"/>
+  <MagicDrawProfile:InvisibleStereotype xmi:id="_QrnMtDiKEeCW-qoOfX288g" base_Element="_be00301_1066745578365_830651_25"/>
+  <MagicDrawProfile:InvisibleStereotype xmi:id="_QrnMtTiKEeCW-qoOfX288g" base_Element="_be00301_1066808483999_917377_153"/>
+  <MagicDrawProfile:InvisibleStereotype xmi:id="_QrnMtjiKEeCW-qoOfX288g" base_Element="_86b026b_1100852264416_278032_17"/>
+  <MagicDrawProfile:InvisibleStereotype xmi:id="_QrnMtziKEeCW-qoOfX288g" base_Element="_8bb027e_1073897792047_918194_4"/>
+  <MagicDrawProfile:InvisibleStereotype xmi:id="_QrnMuDiKEeCW-qoOfX288g" base_Element="_be00301_1066745578365_161054_31"/>
+  <MagicDrawProfile:InvisibleStereotype xmi:id="_QrnMuTiKEeCW-qoOfX288g" base_Element="_86b026b_1101133929591_761242_5"/>
+  <MagicDrawProfile:InvisibleStereotype xmi:id="_QrnMujiKEeCW-qoOfX288g" base_Element="_be00301_1066813090914_271384_2"/>
+  <MagicDrawProfile:InvisibleStereotype xmi:id="_QrnzwDiKEeCW-qoOfX288g" base_Element="_8bb027e_1073897752240_782641_2"/>
+  <MagicDrawProfile:InvisibleStereotype xmi:id="_QrnzwTiKEeCW-qoOfX288g" base_Element="_be00301_1066745578365_232_29"/>
+  <MagicDrawProfile:InvisibleStereotype xmi:id="_QrnzwjiKEeCW-qoOfX288g" base_Element="_be00301_1066813090914_199818_4"/>
+  <MagicDrawProfile:tagGroup xmi:id="_QrtTVziKEeCW-qoOfX288g" base_Property="_be00301_1066822235323_902656_106"/>
+  <MagicDrawProfile:ED xmi:id="_Qrt6YDiKEeCW-qoOfX288g" base_Element="_16_8_8f90291_1270712542437_413036_3307" ed="Architect, Enterprise" base_Class="_16_8_8f90291_1270712542437_413036_3307"/>
+  <MagicDrawProfile:ED xmi:id="_Qrt6YTiKEeCW-qoOfX288g" base_Element="_16_8_8f90291_1270712542437_523206_3309" ed="Architect, Enterprise" base_Class="_16_8_8f90291_1270712542437_523206_3309"/>
+  <MagicDrawProfile:ED xmi:id="_Qrt6YjiKEeCW-qoOfX288g" base_Element="_16_8beta_8f90291_1261576793412_813911_1746" ed="Architect, Enterprise " base_Class="_16_8beta_8f90291_1261576793412_813911_1746"/>
+  <MagicDrawProfile:ED xmi:id="_Qrt6YziKEeCW-qoOfX288g" base_Element="_16_8_8f90291_1270712542437_606408_3302" ed="Architect, Enterprise" base_Class="_16_8_8f90291_1270712542437_606408_3302"/>
+  <MagicDrawProfile:ED xmi:id="_Qrt6ZDiKEeCW-qoOfX288g" base_Element="_16_8_8f90291_1270715760569_791077_5075" ed="Architect, Enterprise" base_Class="_16_8_8f90291_1270715760569_791077_5075"/>
+  <MagicDrawProfile:ED xmi:id="_Qrt6ZTiKEeCW-qoOfX288g" base_Element="_16_8_8f90291_1270715760569_772449_5073" ed="Architect, Enterprise" base_Class="_16_8_8f90291_1270715760569_772449_5073"/>
+  <MagicDrawProfile:ED xmi:id="_QruhcDiKEeCW-qoOfX288g" base_Element="_16_8_8f90291_1270715760569_816414_5072" ed="Architect, Enterprise" base_Class="_16_8_8f90291_1270715760569_816414_5072"/>
+  <MagicDrawProfile:ED xmi:id="_QruhcTiKEeCW-qoOfX288g" base_Element="_16_8_8f90291_1270715760569_58105_5069" ed="Architect, Enterprise" base_Class="_16_8_8f90291_1270715760569_58105_5069"/>
+  <MagicDrawProfile:ED xmi:id="_QruhcjiKEeCW-qoOfX288g" base_Element="_16_8_8f90291_1270712542437_737411_3305" ed="Architect, Enterprise" base_Class="_16_8_8f90291_1270712542437_737411_3305"/>
+  <MagicDrawProfile:ED xmi:id="_QruhcziKEeCW-qoOfX288g" base_Element="_16_8_8f90291_1270712542437_435487_3306" ed="Architect, Enterprise" base_Class="_16_8_8f90291_1270712542437_435487_3306"/>
+  <MagicDrawProfile:ED xmi:id="_QruhdDiKEeCW-qoOfX288g" base_Element="_16_8_8f90291_1270712542437_194873_3301" ed="Architect, Enterprise" base_Class="_16_8_8f90291_1270712542437_194873_3301"/>
+  <MagicDrawProfile:ED xmi:id="_QruhdTiKEeCW-qoOfX288g" base_Element="_16_8_8f90291_1270715760569_342083_5068" ed="Architect, Enterprise" base_Class="_16_8_8f90291_1270715760569_342083_5068"/>
+  <MagicDrawProfile:ED xmi:id="_QruhdjiKEeCW-qoOfX288g" base_Element="_16_8beta_8f90291_1263210423593_909420_1602" ed="Architect, Enterprise" base_Class="_16_8beta_8f90291_1263210423593_909420_1602"/>
+  <MagicDrawProfile:ED xmi:id="_QrvIgDiKEeCW-qoOfX288g" base_Element="_16_8_8f90291_1270712542437_826372_3304" ed="Architect, Enterprise" base_Class="_16_8_8f90291_1270712542437_826372_3304"/>
+  <MagicDrawProfile:Info xmi:id="_QrxkxTiKEeCW-qoOfX288g" base_Package="_12_5_1_8f90291_1188999322162_613487_99" author="NoMagic"/>
+  <MagicDrawProfile:grouped xmi:id="_QryL1jiKEeCW-qoOfX288g" base_Property="_16_0beta1_1ff304e3_1219974937414_45335_493"/>
+  <MagicDrawProfile:propertyGroup xmi:id="_Qr0oEDiKEeCW-qoOfX288g" base_Property="_16_9_8f90291_1280308112642_245005_4349">
+    <properties>allRealizingElements</properties>
+  </MagicDrawProfile:propertyGroup>
+  <MagicDrawProfile:propertyGroup xmi:id="_Qr0oETiKEeCW-qoOfX288g" base_Property="_16_9_8f90291_1280308266446_288826_4517" useAsNode="true"/>
+  <MagicDrawProfile:propertyGroup xmi:id="_Qr0oEjiKEeCW-qoOfX288g" base_Property="_15_5_1ff304e3_1220842397582_532636_828">
+    <properties>T1 Distributed System</properties>
+    <properties>T2 Response adjectives</properties>
+    <properties>T3 End-user efficiency</properties>
+    <properties>T4 Complex processing</properties>
+    <properties>T5 Reusable code</properties>
+    <properties>T6 Easy to install</properties>
+    <properties>T7 Easy to use</properties>
+    <properties>T8 Portable</properties>
+    <properties>T9 Easy to change</properties>
+    <properties>T10 Concurrent</properties>
+    <properties>T11 Security features</properties>
+    <properties>T12 Access for third parties</properties>
+    <properties>T13 Special training required</properties>
+  </MagicDrawProfile:propertyGroup>
+  <MagicDrawProfile:propertyGroup xmi:id="_Qr0oEziKEeCW-qoOfX288g" base_Property="_12_1_f00036a_1174032470911_490758_483">
+    <properties>Assumption</properties>
+    <properties>Component Complexity</properties>
+    <properties>Component Type</properties>
+    <properties>Goal</properties>
+    <properties>Implementation Issues</properties>
+    <properties>Non Functional Requirements</properties>
+    <properties>Out-standing Issue</properties>
+    <properties>PostCondition</properties>
+    <properties>PreCondition</properties>
+    <properties>UseCase Complexity</properties>
+  </MagicDrawProfile:propertyGroup>
+  <MagicDrawProfile:propertyGroup xmi:id="_Qr0oFDiKEeCW-qoOfX288g" base_Property="_16_9_8f90291_1280307700078_485759_4131">
+    <properties>participatesInActivity</properties>
+  </MagicDrawProfile:propertyGroup>
+  <MagicDrawProfile:propertyGroup xmi:id="_Qr0oFTiKEeCW-qoOfX288g" base_Property="_12_1_f00036a_1174032470927_837064_484">
+    <properties>Author</properties>
+    <properties>Date</properties>
+    <properties>Notes</properties>
+    <properties>Priority</properties>
+    <properties>UseCase Number</properties>
+    <properties>sssssssss</properties>
+  </MagicDrawProfile:propertyGroup>
+  <MagicDrawProfile:propertyGroup xmi:id="_Qr1PIDiKEeCW-qoOfX288g" base_Property="_16_8beta_8f90291_1263210423593_411686_1610">
+    <properties>realizingElement</properties>
+  </MagicDrawProfile:propertyGroup>
+  <MagicDrawProfile:propertyGroup xmi:id="_Qr1PITiKEeCW-qoOfX288g" base_Property="_16_9_8f90291_1280308183833_447810_4416">
+    <properties>realizingClass</properties>
+  </MagicDrawProfile:propertyGroup>
+  <MagicDrawProfile:propertyGroup xmi:id="_Qr1PIjiKEeCW-qoOfX288g" base_Property="_16_8beta_8f90291_1261576764318_370580_1707">
+    <properties>describingBehavior</properties>
+  </MagicDrawProfile:propertyGroup>
+  <MagicDrawProfile:propertyGroup xmi:id="_Qr1PIziKEeCW-qoOfX288g" base_Property="_16_8_8f90291_1270715760584_291517_5171">
+    <properties>specifyingElement</properties>
+  </MagicDrawProfile:propertyGroup>
+  <MagicDrawProfile:propertyGroup xmi:id="_Qr1PJDiKEeCW-qoOfX288g" base_Property="_16_9_8f90291_1280308289853_802160_4569">
+    <properties>allSpecifyingElements</properties>
+  </MagicDrawProfile:propertyGroup>
+  <MagicDrawProfile:propertyGroup xmi:id="_Qr1PJTiKEeCW-qoOfX288g" base_Property="_16_9_8f90291_1280308289853_150494_4568" useAsNode="true"/>
+  <MagicDrawProfile:propertyGroup xmi:id="_Qr1PJjiKEeCW-qoOfX288g" base_Property="_16_9_8f90291_1280307700844_432704_4162">
+    <properties>participatesInInteraction</properties>
+  </MagicDrawProfile:propertyGroup>
+  <MagicDrawProfile:propertyGroup xmi:id="_Qr12MDiKEeCW-qoOfX288g" base_Property="_16_8_8f90291_1270712542437_897886_3335">
+    <properties>realizingUseCase</properties>
+  </MagicDrawProfile:propertyGroup>
+  <MagicDrawProfile:propertyGroup xmi:id="_Qr12MTiKEeCW-qoOfX288g" base_Property="_16_8_8f90291_1270715760584_253382_5099" useAsNode="true"/>
+  <MagicDrawProfile:propertyGroup xmi:id="_Qr12MjiKEeCW-qoOfX288g" base_Property="_16_9_8f90291_1280307699078_381342_4100">
+    <properties>allSpecificClassifiers</properties>
+  </MagicDrawProfile:propertyGroup>
+  <MagicDrawProfile:propertyGroup xmi:id="_Qr12MziKEeCW-qoOfX288g" base_Property="_16_9_8f90291_1280307699078_111834_4099" useAsNode="true"/>
+  <MagicDrawProfile:propertyGroup xmi:id="_Qr12NDiKEeCW-qoOfX288g" base_Property="_16_9_8f90291_1280308290728_163409_4597">
+    <properties>specifyingComponent</properties>
+  </MagicDrawProfile:propertyGroup>
+  <MagicDrawProfile:propertyGroup xmi:id="_Qr12NTiKEeCW-qoOfX288g" base_Property="_16_9_8f90291_1280307701781_558249_4192" useAsNode="true"/>
+  <MagicDrawProfile:propertyGroup xmi:id="_Qr12NjiKEeCW-qoOfX288g" base_Property="_16_9_8f90291_1280308183833_331358_4415" useAsNode="true"/>
+  <MagicDrawProfile:propertyGroup xmi:id="_Qr12NziKEeCW-qoOfX288g" base_Property="_16_9_8f90291_1280307700078_59809_4130" useAsNode="true"/>
+  <MagicDrawProfile:propertyGroup xmi:id="_Qr2dQDiKEeCW-qoOfX288g" base_Property="_16_8_8f90291_1270712542437_73851_3311" useAsNode="true"/>
+  <MagicDrawProfile:propertyGroup xmi:id="_Qr2dQTiKEeCW-qoOfX288g" base_Property="_16_9_8f90291_1280307701781_591262_4193">
+    <properties>specificClassifier</properties>
+  </MagicDrawProfile:propertyGroup>
+  <MagicDrawProfile:propertyGroup xmi:id="_Qr2dQjiKEeCW-qoOfX288g" base_Property="_16_8beta_8f90291_1263210423593_32994_1604" useAsNode="true"/>
+  <MagicDrawProfile:propertyGroup xmi:id="_Qr2dQziKEeCW-qoOfX288g" base_Property="_16_9_8f90291_1280307700844_509254_4161" useAsNode="true"/>
+  <MagicDrawProfile:propertyGroup xmi:id="_Qr2dRDiKEeCW-qoOfX288g" base_Property="_16_9_8f90291_1280308290728_546444_4596" useAsNode="true"/>
+  <MagicDrawProfile:propertyGroup xmi:id="_Qr2dRTiKEeCW-qoOfX288g" base_Property="_16_9_8f90291_1280308112642_494958_4348" useAsNode="true"/>
+  <MagicDrawProfile:propertyGroup xmi:id="_Qr2dRjiKEeCW-qoOfX288g" base_Property="_16_8_8f90291_1270715760584_833806_5086" useAsNode="true"/>
+  <MagicDrawProfile:propertyGroup xmi:id="_Qr3EUDiKEeCW-qoOfX288g" base_Property="_16_9_8f90291_1280308266446_888691_4518">
+    <properties>specifyingUseCase</properties>
+  </MagicDrawProfile:propertyGroup>
+  <MagicDrawProfile:propertyGroup xmi:id="_Qr3EUTiKEeCW-qoOfX288g" base_Property="_12_1_f00036a_1174032470927_598945_485">
+    <properties>Alternative Flow of Events</properties>
+    <properties>Alternative Flow of Events Diagrams</properties>
+    <properties>Basic Flow of Events</properties>
+    <properties>Basic Flow of Events Diagrams</properties>
+    <properties>Exceptional Flow of Events</properties>
+    <properties>Exceptional Flow of Events Diagrams</properties>
+  </MagicDrawProfile:propertyGroup>
+  <MagicDrawProfile:propertyGroup xmi:id="_Qr3EUjiKEeCW-qoOfX288g" base_Property="_15_5_1ff304e3_1220842417786_744790_829">
+    <properties>E1 Familiar with RUP</properties>
+    <properties>E2 Application experience</properties>
+    <properties>E3 Object-oriented experience</properties>
+    <properties>E4 Lead analyst capability</properties>
+    <properties>E5 Motivation</properties>
+    <properties>E6 Stable requirements</properties>
+    <properties>E7 Part time workers</properties>
+    <properties>E8 Difficult programming language</properties>
+  </MagicDrawProfile:propertyGroup>
+  <MagicDrawProfile:propertyGroup xmi:id="_Qr3EUziKEeCW-qoOfX288g" base_Property="_16_8beta_8f90291_1261576764318_241513_1701" useAsNode="true"/>
+  <MagicDrawProfile:propertyGroup xmi:id="_Qr3EVDiKEeCW-qoOfX288g" base_Property="_16_8_8f90291_1270715760584_488584_5135">
+    <properties>allGeneralClassifiers</properties>
+    <properties>Base Classifiers</properties>
+  </MagicDrawProfile:propertyGroup>
+  <MagicDrawProfile:Customization xmi:id="_Qr8j4jiKEeCW-qoOfX288g" customizationTarget="_16_0beta1_1ff304e3_1219974937352_657753_470 _9_0_2_be00301_1112960475215_37141_0" base_Class="_16_8_8f90291_1270712542437_413036_3307"/>
+  <MagicDrawProfile:Customization xmi:id="_Qr8j4ziKEeCW-qoOfX288g" customizationTarget="_9_0_2_be00301_1112960475215_37141_0 _16_0beta1_1ff304e3_1219974937352_657753_470" base_Class="_16_8_8f90291_1270712542437_523206_3309"/>
+  <MagicDrawProfile:Customization xmi:id="_Qr9K8DiKEeCW-qoOfX288g" representationText="System Boundary" keyword="System Boundary" base_Class="_12_1_f00036a_1174034260677_999183_652">
+    <customizationTarget xmi:type="uml:Stereotype" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml#magicdraw_1046861421226_625103_15"/>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>name&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>APPLIED_PROFILES&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>DOCUMENTATION_HYPERLINKS&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>TEMPLATE_PARAMETERS&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>INNER_ELEMENTS&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>RELATIONS&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>TAGS&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>CONSTRAINTS&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EP&lt;/title>&lt;/head>&lt;body>&lt;p>qualifiedName&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>owner&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>APPLIED_STEREOTYPES&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>visibility&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EP&lt;/title>&lt;/head>&lt;body>&lt;p>Active Hyperlink&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>nameExpression&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>clientDependency&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>supplierDependency&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>templateParameter&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>appliedStereotypeInstance&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedComment&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedElement&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>namespace&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedTemplateSignature&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>templateBinding&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedDiagram&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>importedMember&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>member&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedMember&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedRule&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>packageImport&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>elementImport&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>owningPackage&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>nestingPackage&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>nestedPackage&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedType&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>packageMerge&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>viewpoint&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>TO_DO&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>E1 Familiar with RUP&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>E2 Application experience&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>E3 Object-oriented experience&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>E4 Lead analyst capability&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>E5 Motivation&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>E6 Stable requirements&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>E7 Part time workers&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>E8 Difficult programming language&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>T1 Distributed System&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>T2 Response adjectives&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>T3 End-user efficiency&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>T4 Complex processing&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>T5 Reusable code&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>T6 Easy to install&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>T7 Easy to use&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>T8 Portable&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>T9 Easy to change&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>T10 Concurrent&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>T11 Security features&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>T12 Access for third parties&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>T13 Special training required&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>owningTemplateParameter&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>packagedElement&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>profileApplication&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>USAGE&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ELEMENT_ID&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>allRealizingElements&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>allSpecifyingElements&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>documentation&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedStereotype&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>realizingElement&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>specifyingElement&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EP&lt;/title>&lt;/head>&lt;body>&lt;p>CUSTOM_IMAGE&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+  </MagicDrawProfile:Customization>
+  <MagicDrawProfile:Customization xmi:id="_Qr9K8TiKEeCW-qoOfX288g" representationText="Use Case Package" keyword="Use Case Package" customizationTarget="_12_1_f00036a_1174033774817_619686_607" base_Class="_12_1_f00036a_1174033756724_517899_606">
+    <suggestedOwnedTypes href="#_9_0_2_be00301_1112960475215_37141_0"/>
+    <suggestedOwnedTypes href="UML_Standard_Profile.MagicDraw_Profile.profile.uml#magicdraw_1046861421226_625103_15"/>
+    <suggestedOwnedTypes href="#_12_1_f00036a_1174033774817_619686_607"/>
+    <suggestedOwnedDiagrams>Use Case Diagram</suggestedOwnedDiagrams>
+    <suggestedOwnedDiagrams>Activity Diagram</suggestedOwnedDiagrams>
+    <suggestedOwnedDiagrams>Sequence Diagram</suggestedOwnedDiagrams>
+  </MagicDrawProfile:Customization>
+  <MagicDrawProfile:Customization xmi:id="_Qr9K8jiKEeCW-qoOfX288g" customizationTarget="_9_0_2_be00301_1112960475215_37141_0" base_Class="_16_8beta_8f90291_1261576793412_813911_1746"/>
+  <MagicDrawProfile:Customization xmi:id="_Qr9K8ziKEeCW-qoOfX288g" customizationTarget="_16_0beta1_1ff304e3_1219974937336_129049_469" base_Class="_15_5_1ff304e3_1220599729768_373865_561">
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>name&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>E2 Application experience&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>E1 Familiar with RUP&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>E3 Object-oriented experience&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>E4 Lead analyst capability&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>E5 Motivation&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>E6 Stable requirements&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>E7 Part time workers&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>E8 Difficult programming language&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>T1 Distributed System&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>T10 Concurrent&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>T11 Security features&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>T12 Access for third parties&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>T13 Special training required&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>T2 Response adjectives&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>T3 End-user efficiency&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>T4 Complex processing&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>T5 Reusable code&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>T6 Easy to install&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>T7 Easy to use&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>T8 Portable&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>T9 Easy to change&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>owningTemplateParameter&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>packagedElement&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>profileApplication&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>DOCUMENTATION_HYPERLINKS&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>USAGE&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>TEMPLATE_PARAMETERS&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>INNER_ELEMENTS&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>RELATIONS&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>TAGS&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>CONSTRAINTS&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EP&lt;/title>&lt;/head>&lt;body>&lt;p>qualifiedName&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>owner&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>APPLIED_STEREOTYPES&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>visibility&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EP&lt;/title>&lt;/head>&lt;body>&lt;p>Active Hyperlink&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>nameExpression&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>clientDependency&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>supplierDependency&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>templateParameter&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>appliedStereotypeInstance&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedComment&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>namespace&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedElement&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedTemplateSignature&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>templateBinding&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedDiagram&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>importedMember&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedMember&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>member&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedRule&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>packageImport&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>elementImport&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>owningPackage&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>nestingPackage&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>nestedPackage&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedType&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>packageMerge&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>viewpoint&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>APPLIED_PROFILES&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>TO_DO&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ELEMENT_ID&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>allRealizingElements&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>allSpecifyingElements&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>documentation&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedStereotype&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>realizingElement&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>specifyingElement&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EP&lt;/title>&lt;/head>&lt;body>&lt;p>CUSTOM_IMAGE&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+  </MagicDrawProfile:Customization>
+  <MagicDrawProfile:Customization xmi:id="_Qr9K9DiKEeCW-qoOfX288g" customizationTarget="_9_0_2_be00301_1112960475215_37141_0" base_Class="_16_8_8f90291_1270712542437_606408_3302"/>
+  <MagicDrawProfile:Customization xmi:id="_Qr9K9TiKEeCW-qoOfX288g" representationText="Requirements Actor" keyword="Actor" customizationTarget="_16_0beta1_1ff304e3_1219974937352_657753_470" base_Class="_15_5_1ff304e3_1220599009286_486870_495">
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>name&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ELEMENT_ID&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>allGeneralClassifiers&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>allRealizingElements&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>allSpecificClassifiers&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>allSpecifyingElements&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>documentation&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>isFinalSpecialization&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>participatesInActivity&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>participatesInInteraction&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>realizingElement&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>specificClassifier&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>specifyingComponent&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>specifyingElement&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>specifyingUseCase&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>Traceability&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>Actor Complexity&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>Realized Interfaces&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>classifierBehavior&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>interfaceRealization&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedBehavior&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedTrigger&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>owningTemplateParameter&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>DOCUMENTATION_HYPERLINKS&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>USAGE&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>BEHAVIORS&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>TEMPLATE_PARAMETERS&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>INNER_ELEMENTS&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>RELATIONS&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>TAGS&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>CONSTRAINTS&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EP&lt;/title>&lt;/head>&lt;body>&lt;p>qualifiedName&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>owner&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>APPLIED_STEREOTYPES&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>isAbstract&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>visibility&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EP&lt;/title>&lt;/head>&lt;body>&lt;p>Active Hyperlink&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>appliedStereotypeInstance&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedComment&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedElement&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>owningPackage&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>nameExpression&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>namespace&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>templateParameter&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedTemplateSignature&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>templateBinding&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>clientDependency&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>supplierDependency&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedDiagram&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>importedMember&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>member&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedMember&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedRule&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>packageImport&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>elementImport&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>package&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>redefinitionContext&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>redefinedElement&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>isLeaf&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>powertypeExtent&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>substitution&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>general&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>redefinedClassifier&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>attribute&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>UMLClass&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>inheritedMember&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>feature&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>generalization&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>collaborationUse&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>representation&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>useCase&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedUseCase&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>Base Classifiers&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>TO_DO&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EP&lt;/title>&lt;/head>&lt;body>&lt;p>CUSTOM_IMAGE&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+  </MagicDrawProfile:Customization>
+  <MagicDrawProfile:Customization xmi:id="_Qr9yADiKEeCW-qoOfX288g" customizationTarget="_16_0beta1_1ff304e3_1219974937352_657753_470 _9_0_2_be00301_1112960475215_37141_0" base_Class="_16_8_8f90291_1270715760569_791077_5075"/>
+  <MagicDrawProfile:Customization xmi:id="_Qr9yATiKEeCW-qoOfX288g" base_Class="_16_8_8f90291_1270715760569_772449_5073">
+    <customizationTarget xmi:type="uml:Stereotype" href="#_16_0beta1_1ff304e3_1219974937352_657753_470"/>
+    <customizationTarget xmi:type="uml:Stereotype" href="#_9_0_2_be00301_1112960475215_37141_0"/>
+    <customizationTarget href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
+  </MagicDrawProfile:Customization>
+  <MagicDrawProfile:Customization xmi:id="_Qr9yAjiKEeCW-qoOfX288g" customizationTarget="_16_0beta1_1ff304e3_1219974937352_657753_470 _9_0_2_be00301_1112960475215_37141_0" base_Class="_16_8_8f90291_1270715760569_816414_5072"/>
+  <MagicDrawProfile:Customization xmi:id="_Qr9yAziKEeCW-qoOfX288g" customizationTarget="_16_0beta1_1ff304e3_1219974937352_657753_470 _9_0_2_be00301_1112960475215_37141_0" base_Class="_16_8_8f90291_1270715760569_58105_5069"/>
+  <MagicDrawProfile:Customization xmi:id="_Qr9yBDiKEeCW-qoOfX288g" customizationTarget="_16_0beta1_1ff304e3_1219974937352_657753_470 _9_0_2_be00301_1112960475215_37141_0" base_Class="_16_8_8f90291_1270712542437_737411_3305"/>
+  <MagicDrawProfile:Customization xmi:id="_Qr-ZEDiKEeCW-qoOfX288g" representationText="Requirements Use Case" keyword="Use Case" customizationTarget="_9_0_2_be00301_1112960475215_37141_0" base_Class="_12_1_f00036a_1173967312269_427115_138">
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>name&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ELEMENT_ID&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>allGeneralClassifiers&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>allRealizingElements&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>allSpecificClassifiers&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>allSpecifyingElements&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>describingBehavior&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>documentation&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>isFinalSpecialization&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>participatesInActivity&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>participatesInInteraction&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>realizingClass&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>realizingElement&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>realizingUseCase&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>specificClassifier&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>specifyingComponent&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>specifyingElement&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>specifyingUseCase&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>USAGE&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>Traceability&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>DOCUMENTATION_HYPERLINKS&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>EXTENSION_POINTS&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>BEHAVIORS&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>TEMPLATE_PARAMETERS&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>INNER_ELEMENTS&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>RELATIONS&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>TAGS&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>CONSTRAINTS&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EP&lt;/title>&lt;/head>&lt;body>&lt;p>qualifiedName&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>owner&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>APPLIED_STEREOTYPES&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>extensionPoint&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>visibility&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>isLeaf&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EP&lt;/title>&lt;/head>&lt;body>&lt;p>Active Hyperlink&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>isAbstract&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>owningPackage&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>appliedStereotypeInstance&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedComment&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedElement&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>templateParameter&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedTemplateSignature&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>templateBinding&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedDiagram&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>importedMember&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>member&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedMember&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedRule&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>packageImport&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>elementImport&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>package&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>redefinitionContext&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>redefinedElement&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>nameExpression&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>namespace&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>powertypeExtent&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>useCase&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedUseCase&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>substitution&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>collaborationUse&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>representation&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>clientDependency&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>supplierDependency&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>general&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>redefinedClassifier&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>attribute&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>UMLClass&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>inheritedMember&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>feature&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>generalization&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedTrigger&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>interfaceRealization&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>classifierBehavior&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>subject&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedBehavior&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>extend&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>include&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>Realized Interfaces&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>Base Classifiers&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>TO_DO&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>PreCondition&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>PostCondition&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>Goal&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>UseCase Complexity&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>Non Functional Requirements&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>Assumption&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>Implementation Issues&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>Out-standing Issue&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>Component Type&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>Component Complexity&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>Basic Flow of Events&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>Basic Flow of Events Diagrams&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>Alternative Flow of Events&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>Alternative Flow of Events Diagrams&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>Exceptional Flow of Events&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>Exceptional Flow of Events Diagrams&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>Author&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>UseCase Number&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>Priority&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>Date&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>Notes&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EP&lt;/title>&lt;/head>&lt;body>&lt;p>CUSTOM_IMAGE&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>owningTemplateParameter&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <checkSpelling>Alternative Flow of Events</checkSpelling>
+    <checkSpelling>Assumption</checkSpelling>
+    <checkSpelling>Author</checkSpelling>
+    <checkSpelling>Basic Flow of Events</checkSpelling>
+    <checkSpelling>Exceptional Flow of Events</checkSpelling>
+    <checkSpelling>Goal</checkSpelling>
+    <checkSpelling>Implementation Issues</checkSpelling>
+    <checkSpelling>Non Functional Requirements</checkSpelling>
+    <checkSpelling>Notes</checkSpelling>
+    <checkSpelling>Out-standing Issue</checkSpelling>
+    <checkSpelling>PostCondition</checkSpelling>
+    <checkSpelling>PreCondition</checkSpelling>
+  </MagicDrawProfile:Customization>
+  <MagicDrawProfile:Customization xmi:id="_Qr-ZETiKEeCW-qoOfX288g" customizationTarget="_16_0beta1_1ff304e3_1219974937352_657753_470 _9_0_2_be00301_1112960475215_37141_0" base_Class="_16_8_8f90291_1270712542437_435487_3306"/>
+  <MagicDrawProfile:Customization xmi:id="_Qr-ZEjiKEeCW-qoOfX288g" customizationTarget="_9_0_2_be00301_1112960475215_37141_0" base_Class="_16_8_8f90291_1270712542437_194873_3301"/>
+  <MagicDrawProfile:Customization xmi:id="_Qr-ZEziKEeCW-qoOfX288g" representationText="UseCase Project Estimation" customizationTarget="_16_0beta1_1ff304e3_1219974937336_129049_469" base_Class="_15_5_1ff304e3_1220841366921_334261_662">
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>name&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EP&lt;/title>&lt;/head>&lt;body>&lt;p>E1 Familiar with RUP&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EP&lt;/title>&lt;/head>&lt;body>&lt;p>E2 Application experience&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EP&lt;/title>&lt;/head>&lt;body>&lt;p>E3 Object-oriented experience&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EP&lt;/title>&lt;/head>&lt;body>&lt;p>E4 Lead analyst capability&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EP&lt;/title>&lt;/head>&lt;body>&lt;p>E5 Motivation&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EP&lt;/title>&lt;/head>&lt;body>&lt;p>E6 Stable requirements&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EP&lt;/title>&lt;/head>&lt;body>&lt;p>E7 Part time workers&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EP&lt;/title>&lt;/head>&lt;body>&lt;p>E8 Difficult programming language&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EP&lt;/title>&lt;/head>&lt;body>&lt;p>T1 Distributed System&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EP&lt;/title>&lt;/head>&lt;body>&lt;p>T2 Response adjectives&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EP&lt;/title>&lt;/head>&lt;body>&lt;p>T3 End-user efficiency&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EP&lt;/title>&lt;/head>&lt;body>&lt;p>T4 Complex processing&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EP&lt;/title>&lt;/head>&lt;body>&lt;p>T5 Reusable code&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EP&lt;/title>&lt;/head>&lt;body>&lt;p>T6 Easy to install&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EP&lt;/title>&lt;/head>&lt;body>&lt;p>T7 Easy to use&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EP&lt;/title>&lt;/head>&lt;body>&lt;p>T8 Portable&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EP&lt;/title>&lt;/head>&lt;body>&lt;p>T9 Easy to change&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EP&lt;/title>&lt;/head>&lt;body>&lt;p>T10 Concurrent&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EP&lt;/title>&lt;/head>&lt;body>&lt;p>T11 Security features&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EP&lt;/title>&lt;/head>&lt;body>&lt;p>T12 Access for third parties&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EP&lt;/title>&lt;/head>&lt;body>&lt;p>T13 Special training required&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>owningTemplateParameter&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>packagedElement&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>profileApplication&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>DOCUMENTATION_HYPERLINKS&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>USAGE&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>TEMPLATE_PARAMETERS&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>INNER_ELEMENTS&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>RELATIONS&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>TAGS&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SN&lt;/title>&lt;/head>&lt;body>&lt;p>CONSTRAINTS&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EP&lt;/title>&lt;/head>&lt;body>&lt;p>qualifiedName&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>owner&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>APPLIED_STEREOTYPES&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>visibility&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EP&lt;/title>&lt;/head>&lt;body>&lt;p>Active Hyperlink&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>nameExpression&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>clientDependency&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>supplierDependency&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>templateParameter&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>appliedStereotypeInstance&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedComment&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>namespace&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedElement&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedTemplateSignature&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>templateBinding&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedDiagram&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>importedMember&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedMember&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>member&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedRule&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>packageImport&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>elementImport&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>owningPackage&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>nestingPackage&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>nestedPackage&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedType&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>packageMerge&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>viewpoint&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>APPLIED_PROFILES&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>SP&lt;/title>&lt;/head>&lt;body>&lt;p>TO_DO&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ELEMENT_ID&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>allRealizingElements&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>allSpecifyingElements&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>documentation&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>ownedStereotype&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>realizingElement&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>HP&lt;/title>&lt;/head>&lt;body>&lt;p>specifyingElement&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+    <standardExpertConfiguration>&lt;html>&lt;head>&lt;title>EP&lt;/title>&lt;/head>&lt;body>&lt;p>CUSTOM_IMAGE&lt;/p>&lt;/body>&lt;/html></standardExpertConfiguration>
+  </MagicDrawProfile:Customization>
+  <MagicDrawProfile:Customization xmi:id="_Qr-ZFDiKEeCW-qoOfX288g" customizationTarget="_9_0_2_be00301_1112964642046_825187_87" base_Class="_14_0_8760274_1188455323324_759077_350"/>
+  <MagicDrawProfile:Customization xmi:id="_Qr-ZFTiKEeCW-qoOfX288g" base_Class="_16_8_8f90291_1270715760569_342083_5068">
+    <customizationTarget href="pathmap://UML_METAMODELS/UML.metamodel.uml#Classifier"/>
+    <customizationTarget xmi:type="uml:Stereotype" href="#_9_0_2_be00301_1112960475215_37141_0"/>
+    <customizationTarget xmi:type="uml:Stereotype" href="#_16_0beta1_1ff304e3_1219974937352_657753_470"/>
+  </MagicDrawProfile:Customization>
+  <MagicDrawProfile:Customization xmi:id="_Qr_AIDiKEeCW-qoOfX288g" customizationTarget="_9_0_2_be00301_1112960475215_37141_0 _16_0beta1_1ff304e3_1219974937352_657753_470" base_Class="_16_8beta_8f90291_1263210423593_909420_1602"/>
+  <MagicDrawProfile:Customization xmi:id="_Qr_AITiKEeCW-qoOfX288g" customizationTarget="_16_0beta1_1ff304e3_1219974937352_657753_470 _9_0_2_be00301_1112960475215_37141_0" base_Class="_16_8_8f90291_1270712542437_826372_3304"/>
+  <MagicDrawProfile:derivedPropertySpecification xmi:id="_QsCqgTiKEeCW-qoOfX288g" base_Element="_16_8_8f90291_1270712542437_12157_3322" isReadOnly="true">
+    <expression>Generalization; Relation; Generalization; Target to source; Classifier;</expression>
+  </MagicDrawProfile:derivedPropertySpecification>
+  <MagicDrawProfile:derivedPropertySpecification xmi:id="_QsCqgjiKEeCW-qoOfX288g" base_Element="_16_8beta_8f90291_1263210423593_830840_1603" isReadOnly="true">
+    <expression>Abstraction;Relation;Abstraction;Target to source;UseCase Description Profile::requirementUseCase,NamedElement,UseCase Description Profile::requirementActor;</expression>
+  </MagicDrawProfile:derivedPropertySpecification>
+  <MagicDrawProfile:derivedPropertySpecification xmi:id="_QsCqgziKEeCW-qoOfX288g" base_Element="_16_8_8f90291_1270715760584_183168_5096" isReadOnly="true">
+    <expression>All Specifying Elements;Binary;com.nomagic.magicdraw.derivedproperty.RecursiveExpression(NamedElement.specifyingElement,NamedElement.allSpecifyingElements);</expression>
+  </MagicDrawProfile:derivedPropertySpecification>
+  <MagicDrawProfile:derivedPropertySpecification xmi:id="_QsCqhDiKEeCW-qoOfX288g" base_Element="_16_8_8f90291_1270712542437_183860_3329" isReadOnly="true">
+    <expression>All Generalization; Binary; com.nomagic.magicdraw.derivedproperty.RecursiveExpression(Classifier.moreSpecificClassifiers, Classifier.allMoreSpecificClassifiers);</expression>
+  </MagicDrawProfile:derivedPropertySpecification>
+  <MagicDrawProfile:derivedPropertySpecification xmi:id="_QsCqhTiKEeCW-qoOfX288g" base_Element="_16_8_8f90291_1270712542437_508001_3324" isReadOnly="true">
+    <expression>Owned Behavior;Property;BehavioredClassifier.ownedBehavior;Source to target;Activity;</expression>
+    <expression>Activities in those classifier is used as types of Nodes;MetaChain;Classifier._typedElementOfType.ObjectNode.activity;</expression>
+  </MagicDrawProfile:derivedPropertySpecification>
+  <MagicDrawProfile:derivedPropertySpecification xmi:id="_QsCqhjiKEeCW-qoOfX288g" base_Element="_16_8_8f90291_1270712542437_800453_3313" isReadOnly="true">
+    <expression>Abstraction;Relation;Abstraction;Target to source;NamedElement;</expression>
+  </MagicDrawProfile:derivedPropertySpecification>
+  <MagicDrawProfile:derivedPropertySpecification xmi:id="_QsCqhziKEeCW-qoOfX288g" base_Element="_16_8beta_8f90291_1261576793412_534712_1747" isReadOnly="true">
+    <expression>Owned Behavior;Property;BehavioredClassifier.ownedBehavior;Source to target;StateMachine,Interaction,Activity;</expression>
+    <expression>Alternative Flow of Events Diagrams;Tag;UseCase Description Profile::requirementUseCase.Alternative Flow of Events Diagrams;Source to target;Diagram;</expression>
+    <expression>Exceptional Flow of Events Diagrams;Tag;UseCase Description Profile::requirementUseCase.Exceptional Flow of Events Diagrams;Source to target;Diagram;</expression>
+    <expression>Basic Flow of Events Diagrams;Tag;UseCase Description Profile::requirementUseCase.Basic Flow of Events Diagrams;Source to target;Diagram;</expression>
+  </MagicDrawProfile:derivedPropertySpecification>
+  <MagicDrawProfile:derivedPropertySpecification xmi:id="_QsDRkDiKEeCW-qoOfX288g" base_Element="_16_8_8f90291_1270712542437_244873_3318" isReadOnly="true">
+    <expression>All Realizing Elements;Binary;com.nomagic.magicdraw.derivedproperty.RecursiveExpression(NamedElement.realizingElement, NamedElement.allRealizingElements);</expression>
+  </MagicDrawProfile:derivedPropertySpecification>
+  <MagicDrawProfile:derivedPropertySpecification xmi:id="_QsDRkTiKEeCW-qoOfX288g" base_Element="_16_8_8f90291_1270715760584_504712_5088" isReadOnly="true">
+    <expression>ComponentRealization; Relation; ComponentRealization; Source to target; Component;</expression>
+  </MagicDrawProfile:derivedPropertySpecification>
+  <MagicDrawProfile:derivedPropertySpecification xmi:id="_QsDRkjiKEeCW-qoOfX288g" base_Element="_16_8_8f90291_1270715760584_306387_5085" isReadOnly="true">
+    <expression>All Generalization;Binary;com.nomagic.magicdraw.derivedproperty.RecursiveExpression(Classifier.Base Classifiers, Classifier.allGeneralClassifiers);</expression>
+  </MagicDrawProfile:derivedPropertySpecification>
+  <MagicDrawProfile:derivedPropertySpecification xmi:id="_QsDRkziKEeCW-qoOfX288g" base_Element="_16_8_8f90291_1270712542437_330700_3320" isReadOnly="true">
+    <expression>Owned Behavior;Property;BehavioredClassifier.ownedBehavior;Source to target;Interaction;</expression>
+    <expression>Interactions in those classifier is used a type;MetaChain;Classifier._typedElementOfType.Property._lifelineOfRepresents.Lifeline.interaction;</expression>
+  </MagicDrawProfile:derivedPropertySpecification>
+  <MagicDrawProfile:derivedPropertySpecification xmi:id="_QsDRlDiKEeCW-qoOfX288g" base_Element="_16_8_8f90291_1270715760584_343501_5098" isReadOnly="true">
+    <expression>Component Realization;Relation;ComponentRealization;Source to target;Component;</expression>
+    <expression>Abstraction;Relation;Abstraction;Source to target;NamedElement;</expression>
+    <expression>Interface Realization;Relation;InterfaceRealization;Source to target;Interface;</expression>
+  </MagicDrawProfile:derivedPropertySpecification>
+  <MagicDrawProfile:derivedPropertySpecification xmi:id="_QsDRlTiKEeCW-qoOfX288g" base_Element="_16_8_8f90291_1270712542437_175255_3310" isReadOnly="true">
+    <expression>Abstraction;Relation;Abstraction;Target to source;UseCase Description Profile::requirementUseCase,UseCase;</expression>
+  </MagicDrawProfile:derivedPropertySpecification>
+  <MagicDrawProfile:derivedPropertySpecification xmi:id="_QsDRljiKEeCW-qoOfX288g" base_Element="_16_8_8f90291_1270715760584_77314_5104" isReadOnly="true">
+    <expression>Abstraction; Relation; Abstraction; Source to target; UseCase;</expression>
+  </MagicDrawProfile:derivedPropertySpecification>
+  <ValidationProfile:validationSuite xmi:id="_QsQF4DiKEeCW-qoOfX288g" base_Package="_12_5_1_8f90291_1188999322162_613487_99"/>
+</xmi:XMI>

@@ -1,0 +1,21 @@
+«IMPORT uml»
+«IMPORT UseCaseManagement»
+«IMPORT PersistenceManagement» 
+«IMPORT RuleManagement»
+
+«EXTENSION template::Helper»
+
+«REM» ============================================================= «ENDREM»
+
+«DEFINE Srv FOR uml::Model»
+	«EXPAND loginSRV FOREACH allOwnedElements().typeSelect(login)»
+«ENDDEFINE»
+
+
+«REM» ============================================================= «ENDREM»
+«REM» Login Service                                                 «ENDREM»
+«REM» ============================================================= «ENDREM»
+
+«DEFINE loginSRV FOR UseCase»
+	
+«ENDDEFINE»

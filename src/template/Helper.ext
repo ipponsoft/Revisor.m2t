@@ -1,0 +1,140 @@
+import uml;
+
+String projectName() :
+	"revisor";
+
+String extractClientPath(Type cls, String sep) :
+	extractPath(cls, sep, "client");
+	
+String extractServerPath(Type cls, String sep) :
+	extractPath(cls, sep, "server");
+	
+String extractSharedPath(Type cls, String sep) :
+	extractPath(cls, sep, "shared");
+
+String extractPath(Type cls, String sep, String pt) :
+	let nsc = cls.qualifiedName.subString(0, cls.qualifiedName.length - cls.name.length).split("::") :
+	"de" + sep + "ipponsoft" + sep + projectName() + sep + pt + sep +
+	nsc
+		.collect(e | e.camelCase())
+		.reject(e | e == nsc.first().toFirstLower())
+		.toString(sep);
+		
+
+String extractServiceStubPath(Type cls, String sep) :
+	extractPath(cls, sep, "client" + sep + "services");
+
+String extractServiceImplPath(Type cls, String sep) :
+	extractPath(cls, sep, "server" + sep + "services");
+	
+	
+String asClientPath(Type cls, String sep) :
+	asPath(cls, sep, "client");
+	
+String asServerPath(Type cls, String sep) :
+	asPath(cls, sep, "server");
+	
+String asSharedPath(Type cls, String sep) :
+	asPath(cls, sep, "shared");
+	
+String asPath(Type cls, String sep, String pt) :
+	extractPath(cls, sep, pt) + sep + cls.name.className();
+	
+
+String asPO(Type cls) :
+	cls.name.className();
+
+String asPOFullName(Type cls) :
+	asServerPath(cls, ".");
+
+String asDTO(Type cls) :
+	asPO(cls) + "DTO";
+
+String asDTOFullName(Type cls) :
+	asClientPath(cls, ".") + "DTO";
+
+
+String asServiceStubPath(Type cls, String sep) :
+	extractServiceStubPath(cls, sep) + sep + cls.name.className() + "Service";
+
+String asServiceStubAsyncPath(Type cls, String sep) :
+	extractServiceStubPath(cls, sep) + sep + cls.name.className() + "ServiceAsync";
+
+String asServiceImplPath(Type cls, String sep) :
+	extractServiceImplPath(cls, sep) + sep + cls.name.className() + "ServiceImpl";
+
+	
+String fullClientName(Type typ) :
+	fullName(typ, "client");
+	
+String fullServerName(Type typ) :
+	fullName(typ, "server");
+	
+String fullSharedName(Type typ) :
+	fullName(typ, "shared");
+	
+String fullName(Type typ, String pt) :
+	extractPath(typ, ".", pt) + "." + typ.name;
+	
+
+String assocName(Property prop) :
+	prop.name == "" 
+		? (prop.association.name == "" ? "all" + prop.type.name.toFirstUpper() : prop.association.name)
+		: prop.name;
+	
+String replaceSpecialChars(String name) :
+	name
+		.replaceAll("ß","ss")
+  		.replaceAll("ä","ae")
+  		.replaceAll("ö","oe")
+  		.replaceAll("ü","ue")
+  		.replaceAll("Ä","Ae")
+  		.replaceAll("Ö","Oe")
+  		.replaceAll("Ü","Ue");
+
+String removeNonAlphaNumChars(String name) :
+	name
+		.replaceAll("[^A-Za-z0-9_]","_");
+
+String camelCase(String name) :
+	let nc = name.split(" ") :
+	nc.size == 1 
+		? name
+			.replaceSpecialChars()
+	  		.toFirstLower()
+		: nc
+			.collect(c | c.toLowerCase()
+							.replaceSpecialChars()
+					  		.toFirstUpper())
+			.toString("")
+			.toFirstLower();
+		
+String className(String name) :
+	name.contains(" ") ? name.camelCase().toFirstUpper() : name;
+		
+String asSetter(String name) :
+	"set" + name.camelCase().toFirstUpper();
+	
+String asGetter(String name) :
+	"get" + name.camelCase().toFirstUpper() + "()";
+	
+String asMultiSetter(String name) :
+	"addTo" + name.camelCase().toFirstUpper();
+	
+String asMultiRemover(String name) :
+	"removeFrom" + name.camelCase().toFirstUpper();
+	
+String asParam(String name) :
+	"a" + name.camelCase().toFirstUpper();
+	
+String mapType(Type typ) :
+	(typ.metaType == uml::DataType
+	 || typ.metaType == uml::Enumeration)
+		? fullSharedName(typ) 
+		: ("date" == typ.name ? "java.sql.Date" : typ.name); 
+	
+String asEnumVal(String val) :
+	val
+		.replaceSpecialChars()
+		.removeNonAlphaNumChars()
+		.toUpperCase();

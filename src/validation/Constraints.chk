@@ -1,0 +1,10 @@
+import uml;
+import PersistenceManagement;
+
+context Property WARNING "Class " + ((Class)owner).name + ": Attribute named 'id' will be ignored due to internal use by hibernate!" :
+	name.toLowerCase() != 'id';
+
+context key ERROR "Class " + ((Class)owner).name + ": ID-Attribute has to be nummeric!" :
+	"String string Integer integer Int int Long long".contains(type.name);
+	
+// add more constraints...

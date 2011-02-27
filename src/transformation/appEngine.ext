@@ -1,0 +1,6 @@
+import uml;
+
+extension org::eclipse::xtend::typesystem::uml2::profile::profiling;
+
+uml::Model transform(uml::Model m, appEngineMergeModel::AppEngineClassListType m2m) :
+	m;

@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<workflow>
+	<property file="./generator.properties"/>
+	
+    <!-- Setup UML2 support -->
+    <!-- initializes resourcemaps, urimaps, etc. -->
+    <bean class="org.eclipse.xtend.typesystem.uml2.Setup" standardUML2Setup="true"/> 
+    
+    <!-- defines metamodels -->
+	<bean id="uml2" class="org.eclipse.xtend.typesystem.uml2.UML2MetaModel"/>
+	<bean id="ruleProfile" class="org.eclipse.xtend.typesystem.uml2.profile.ProfileMetaModel">
+         <profile value="${modelPath}/${ruleProfileFile}"/>
+    </bean>
+	<bean id="persistenceProfile" class="org.eclipse.xtend.typesystem.uml2.profile.ProfileMetaModel">
+         <profile value="${modelPath}/${persistenceProfileFile}"/>
+    </bean>
+	<bean id="useCaseProfile" class="org.eclipse.xtend.typesystem.uml2.profile.ProfileMetaModel">
+         <profile value="${modelPath}/${UseCaseProfileFile}"/>
+    </bean>
+    
+    <!-- Clean targets -->
+    <component class="org.eclipse.emf.mwe.utils.DirectoryCleaner">
+    	<directory value="${modGenPath}/"/>
+    </component>
+    <component class="org.eclipse.emf.mwe.utils.DirectoryCleaner">
+    	<directory value="${srcGenPath}/"/>
+    </component>
+    
+    <!-- Reads the UML models and stores it into right slots -->
+	<component class="org.eclipse.xtend.typesystem.emf.XmiReader">
+		<modelFile value="${modelPath}/${pimFile}"/>
+		<outputSlot value="${pimSlot}"/>
+	</component>
+
+    <!-- Reads the merge models and stores it into right slots -->
+	<component class="org.eclipse.xtend.typesystem.xsd.XMLReader">
+		<uri value="${transformationPath}/${mmFile}"/>
+		<modelSlot value="${mmSlot}"/>
+		<metaModel id="appEngineMergeModel" class="org.eclipse.xtend.typesystem.xsd.XSDMetaModel">
+        	<schemaFile value="${metaModelPath}/${appEngineMergeModel}"/>
+        </metaModel>
+	</component>
+
+	<!-- Transform the model -->	
+	<component class="org.eclipse.xtend.XtendComponent">
+		<metaModel idRef="uml2"/>
+		<metaModel idRef="ruleProfile"/>
+		<metaModel idRef="persistenceProfile"/>
+		<metaModel idRef="useCaseProfile"/>
+		<metaModel idRef="appEngineMergeModel"/>
+		<invoke value="src::transformation::appEngine::transform(${pimSlot}, ${mmSlot})"/>
+	 	<outputSlot value="${psmSlot}"/>
+	</component>
+
+	<!-- Store the transformed model -->
+	<component class="org.eclipse.xtend.typesystem.uml2.UML2Writer">
+		<outPath value="${modGenPath}/${psmFile}"/>
+		<inputSlot value="${psmSlot}"/>
+		<useUML1x value="true"/>
+	</component>
+	
+	<!-- Validate the model -->	
+	<component class="org.eclipse.xtend.check.CheckComponent">
+		<metaModel idRef="uml2"/>
+		<metaModel idRef="persistenceProfile"/>
+		<metaModel idRef="useCaseProfile"/>
+		<checkFile value="src::validation::Constraints"/>
+		<!-- check the object in slot 'model' (i.e. the uml::Model instance)
+		   and all its children
+		 -->
+		<emfAllChildrenSlot value="${psmSlot}"/>
+	</component>
+
+	<!-- XPand for AppEngine  -->
+	<component id="generator" class="org.eclipse.xpand2.Generator" skipOnErrors="true">
+		<metaModel idRef="uml2"/>
+		<metaModel idRef="persistenceProfile"/>
+		<metaModel idRef="ruleProfile"/>
+		<metaModel idRef="useCaseProfile"/>
+        <!-- Start text/code generation with the following template for the object  -->
+		<expand value="template::AppEngineDOM::Dom FOR ${psmSlot}"/>
+		<!-- Configure default outlet -->
+   		<outlet path="${srcGenPath}">
+		<!-- Beautify generated Java output -->
+		<postprocessor class="org.eclipse.xpand2.output.JavaBeautifier"/>
+	    </outlet>
+	    <fileEncoding value="ISO-8859-1"/>
+	</component>
+
+</workflow>

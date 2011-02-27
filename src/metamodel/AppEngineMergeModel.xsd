@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.ipponsoft.de/AppEngineMarkup" elementFormDefault="qualified" targetNamespace="http://www.ipponsoft.de/AppEngineMarkup">
+	<complexType name="AppEngineClassType">
+		<sequence>
+			<element maxOccurs="1" minOccurs="0" name="idField" type="string"/>
+			<element maxOccurs="unbounded" minOccurs="0" name="nameField" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="serviceEntryName" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="title" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="serviceIcon" type="string"/>
+		</sequence>
+		<attribute name="name" type="string"/>
+	</complexType>
+	<complexType name="AppEngineClassListType">
+		<sequence>
+			<element maxOccurs="unbounded" minOccurs="0" name="AppEngineClass" type="tns:AppEngineClassType"/>
+		</sequence>
+	</complexType>
+	<element name="AppEngineClasses" type="tns:AppEngineClassListType"/>
+</schema>

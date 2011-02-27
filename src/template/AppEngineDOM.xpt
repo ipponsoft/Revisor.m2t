@@ -1,0 +1,475 @@
+«IMPORT uml»
+«IMPORT UseCaseManagement»
+«IMPORT PersistenceManagement» 
+«IMPORT RuleManagement»
+
+«EXTENSION template::Helper»
+
+«REM» ============================================================= «ENDREM»
+
+«DEFINE Dom FOR uml::Model»
+	«EXPAND po FOREACH allOwnedElements().typeSelect(Entity)»
+	«EXPAND dto FOREACH allOwnedElements().typeSelect(Entity)»
+	«EXPAND type FOREACH allOwnedElements().typeSelect(DataType)»
+	«EXPAND enum FOREACH allOwnedElements().typeSelect(Enumeration)»
+«ENDDEFINE»
+
+
+«REM» ============================================================= «ENDREM»
+«REM» Enumeration Class                                             «ENDREM»
+«REM» ============================================================= «ENDREM»
+
+«DEFINE enum FOR Enumeration»
+
+	«FILE asSharedPath("/") + ".java"»
+		package «extractSharedPath(".")»;
+		
+		public enum «this.name.className()» {		
+			«FOREACH ownedLiteral AS l SEPARATOR ', '»
+			«l.name.asEnumVal()»
+			«ENDFOREACH» 
+		}
+	«ENDFILE»
+«ENDDEFINE»
+
+«REM» ============================================================= «ENDREM»
+«REM» Data Taype                                                    «ENDREM»
+«REM» ============================================================= «ENDREM»
+
+«DEFINE type FOR DataType»
+
+	«FILE asSharedPath("/") + ".java"»
+		package «extractSharedPath(".")»;
+		
+		import javax.persistence.*;
+		
+		public class «this.name.className()» {
+		
+			«FOREACH ownedAttribute AS a»
+			«EXPAND simplePropertyPO FOR a»
+			«ENDFOREACH»
+			
+		}
+	«ENDFILE»
+«ENDDEFINE»
+
+«REM» ============================================================= «ENDREM»
+«REM» Persistent Class                                              «ENDREM»
+«REM» ============================================================= «ENDREM»
+
+«DEFINE po FOR Entity»
+
+	«ownedAttribute.removeAll(ownedAttribute.select(e | e.name.toLowerCase() == "id"))»
+		
+	«FILE asServerPath("/") + ".java"»
+		package «extractServerPath(".")»;
+		
+		import javax.persistence.*;
+		import com.google.appengine.api.datastore.Key;
+		import com.google.appengine.api.datastore.KeyFactory;
+		import de.ipponsoft.appengine.shared.jpa.interfaces.PO;
+		import de.ipponsoft.appengine.shared.jpa.interfaces.DTO;
+		import «this.asDTOFullName()»;
+		«IF this.parents().first().name.trim() != null-»
+		import «this.parents().first().asPOFullName()»;
+		«ENDIF-»
+		
+		«IF getAppliedStereotypes().collect(e | e.name).contains("persistent")-»
+		@Entity
+		«IF this.parents().first().name.trim() != null-»
+		@Inheritance(strategy=InheritanceType.TABLE_PER_CLASS)«ENDIF»
+		«ENDIF»
+				
+		public class «this.name.className()»  
+		«IF this.parents().first().name.trim() != null»extends «this.parents().first().asPO()»«ENDIF-»
+		implements PO {
+		
+			«EXPAND idPropertyPO»
+			
+			«EXPAND constructorsPO»
+			
+			«EXPAND dtoMethodsPO»
+								
+			«FOREACH ownedAttribute
+					 .reject(e | e.association != null) AS a»
+			«EXPAND simplePropertyPO FOR a»
+			«ENDFOREACH»
+
+			«FOREACH ownedAttribute
+					 .select(e | e.association != null) AS a»
+			«EXPAND assocPropertyPO FOR a»
+			«ENDFOREACH»
+			
+			«FOREACH ownedOperation AS o»
+			«EXPAND customOperation FOR o»
+			«ENDFOREACH»
+			
+		}
+	«ENDFILE»
+«ENDDEFINE»
+
+«REM» ============================================================= «ENDREM»
+«REM» ID Property                                                   «ENDREM»
+«REM» ============================================================= «ENDREM»
+
+«DEFINE idPropertyPO FOR Class»
+
+	//**************************************
+	// Attribute id
+	//**************************************
+
+	@Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Key id;
+    
+	public Object getId() {
+		return this.id;
+	}
+	public void setId(Key anId) {
+		this.id = anId;
+	}
+
+«ENDDEFINE»
+
+«REM» ============================================================= «ENDREM»
+«REM» Constructors                                                  «ENDREM»
+«REM» ============================================================= «ENDREM»
+
+«DEFINE constructorsPO FOR Class»
+
+	//**************************************
+	// Default Constructor
+	//**************************************
+
+	public «this.name.className()»() {}
+	
+	//**************************************
+	// DTO Constructor
+	//**************************************
+	
+	public «this.name.className()»(«this.asDTO()» obj) {
+		fromDTO(obj);
+	}
+
+«ENDDEFINE»
+
+«REM» ============================================================= «ENDREM»
+«REM» DTO Setter'n'Getter                                           «ENDREM»
+«REM» ============================================================= «ENDREM»
+
+«DEFINE dtoMethodsPO FOR Class»
+
+	//**************************************
+	// DTO Getter
+	//**************************************
+	
+	public DTO asDTO() {
+		
+		«this.asDTO()» dto = new «this.asDTO()»();
+		
+		if (null != getId()) {
+			dto.setId(KeyFactory.keyToString((Key) getId()));
+		}
+		
+		«FOREACH this.getAllAttributes()
+				 .reject(e | e.association != null) AS a-»
+		dto.«a.name.asSetter()»(«a.name.asGetter()»);
+		«ENDFOREACH-»
+
+		«FOREACH this.getAllAttributes()
+				 .select(e | e.association != null) AS a»
+		// Relations
+		«ENDFOREACH»
+		
+		return dto;
+	}
+
+	//**************************************
+	// DTO Setter
+	//**************************************
+	
+	public void fromDTO(DTO dto) {
+		
+		«this.asDTO()» obj = («this.asDTO()») dto;
+		
+		if (null != obj.getId()) {
+			setId(KeyFactory.stringToKey(obj.getId()));
+		}
+		
+		«FOREACH ownedAttribute
+				 .reject(e | e.association != null) AS a»
+		«a.name.asSetter()»(obj.«a.name.asGetter()»);
+		«ENDFOREACH»
+
+		«FOREACH ownedAttribute
+				 .select(e | e.association != null) AS a»
+		// Relations
+		«ENDFOREACH»
+	}
+
+«ENDDEFINE»
+
+«REM» ============================================================= «ENDREM»
+«REM» Simple Attributes                                             «ENDREM»
+«REM» ============================================================= «ENDREM»
+
+«DEFINE simplePropertyPO FOR Property»
+
+	//**************************************
+	// Attribute «name»
+	//**************************************
+
+	@Basic
+	private «type.mapType()» «name.camelCase()»;
+	
+	«IF this.association != null»@ManyToOne«ENDIF»
+	public «type.mapType()» «name.asGetter()» {
+		return this.«name.camelCase()»;
+	}
+	public void «name.asSetter()»(«type.mapType()» «name.asParam()») {
+		this.«name.camelCase()» = «name.asParam()»;
+	}
+
+«ENDDEFINE»
+
+«REM» ============================================================= «ENDREM»
+«REM» Attributes for Associations                                   «ENDREM»
+«REM» ============================================================= «ENDREM»
+
+«DEFINE assocPropertyPO FOR Property»
+	//**************************************
+	// Relation «assocName(this)»
+	//**************************************
+
+	@Basic
+	«IF (this.upper == null || this.upper == 1)»
+	private «type.asPOFullName()» «this.assocName().camelCase()»;
+	
+	@OneToOne(cascade=CascadeType.ALL, fetch=FetchType.LAZY)
+	public «type.asPOFullName()» «assocName().asGetter()» {
+		return «this.assocName().camelCase()»;
+	}
+	public void «assocName().asSetter()»(«type.asPOFullName()» «assocName().asParam()») {
+		«assocName().camelCase()» = «assocName().asParam()»;
+	}
+	
+	«ELSE-»
+	private java.util.List<«type.asPOFullName()»> «assocName(this).camelCase()» = new java.util.ArrayList<«type.asPOFullName()»>();
+	
+	@OneToMany(cascade=CascadeType.ALL, fetch=FetchType.LAZY)
+	public java.util.List<«type.fullServerName()»> «this.assocName().asGetter()» {
+		return «assocName(this).camelCase()»;
+	}
+	public void «assocName(this).asSetter()»(java.util.List<«type.fullServerName()»> «assocName(this).asParam()») {
+		«assocName(this).camelCase()» = «assocName(this).asParam()»;
+	}	
+	public void «assocName(this).asMultiSetter()»(«type.fullServerName()» «assocName(this).asParam()») {
+		if (!«assocName(this).camelCase()».contains(«assocName(this).asParam()»)) {
+			«assocName(this).camelCase()».add(«assocName(this).asParam()»);
+			«IF (this.getOtherEnd() != null) 
+				&& (this.getOtherEnd().isNavigable())-»
+				// Assure consistency
+				if («assocName(this).asParam()» != null) {
+					«IF this.getOtherEnd().isMultivalued()-»
+						«assocName(this).asParam()».«assocName(getOtherEnd()).asMultiSetter()»(this);
+					«ELSE-»
+						«assocName(this).asParam()».«assocName(getOtherEnd()).asSetter()»(this);
+					«ENDIF-»
+				}
+			«ENDIF-» 
+		}
+	}
+	public void «assocName(this).asMultiRemover()»(«type.fullServerName()» «assocName(this).asParam()») {
+		if («assocName(this).camelCase()».contains(«assocName(this).asParam()»)) {
+			«assocName(this).camelCase()».remove(«assocName(this).asParam()»);
+			«IF (this.getOtherEnd() != null) 
+				&& (this.getOtherEnd().isNavigable())-»
+				// Assure consistency
+				if («assocName(this).asParam()» != null) {
+					«IF this.getOtherEnd().isMultivalued()-»
+						«assocName(this).asParam()».«assocName(getOtherEnd()).asMultiRemover()»(this);
+					«ELSE-»
+						«assocName(this).asParam()».«assocName(getOtherEnd()).asSetter()»(null);
+					«ENDIF-»
+				}
+			«ENDIF-» 
+		}
+	}
+	«ENDIF-»
+
+«ENDDEFINE»
+
+«REM» ============================================================= «ENDREM»
+«REM» Rule Operations                                             	«ENDREM»
+«REM» ============================================================= «ENDREM»
+
+«DEFINE customOperation FOR Rule»
+	//**************************************
+	// Business Rule «this.name.camelCase()»
+	//**************************************
+
+	/*
+	«this.visibility» 
+	«IF this.type.name == null»void «ELSE»de.ipponsoft.services.rules.Result «ENDIF-» 
+	«this.name.camelCase()-»
+	(«FOREACH this.ownedParameter AS p SEPARATOR ', '-»
+	«IF p.name != ""»«p.type.mapType()» «p.name.camelCase()»«ENDIF-»
+	«ENDFOREACH-») throws Exception {
+		de.ipponsoft.services.rules.RuleHandler rh = 
+			new de.ipponsoft.services.rules.RuleHandler(
+				"«this.ruleFile»", 
+				de.ipponsoft.services.rules.RuleHandler.TYPE_«this.ruleType.name.toUpperCase()»);
+		«IF this.type.name != null-»
+		return «ENDIF-»rh.fireOn(this);
+	}
+	*/
+«ENDDEFINE»
+
+«REM» ============================================================= «ENDREM»
+«REM» Custom Operations                                             «ENDREM»
+«REM» ============================================================= «ENDREM»
+
+«DEFINE customOperation FOR Operation»
+	//**************************************
+	// Operation «this.name.camelCase()»
+	//**************************************
+
+	«this.visibility» «IF this.type.name == null»void«ELSE»«this.type.mapType()»«ENDIF» 
+	«this.name.camelCase()-»
+	(«FOREACH this.ownedParameter AS p SEPARATOR ', '-»
+	«IF p.name != ""»«p.type.mapType()» «p.name.camelCase()»«ENDIF-»
+	«ENDFOREACH-») {
+		«IF this.type.name != null»return null;«ENDIF»
+	}
+«ENDDEFINE»
+
+«REM» ============================================================= «ENDREM»
+«REM» Data Transfer Class                                           «ENDREM»
+«REM» ============================================================= «ENDREM»
+
+«DEFINE dto FOR Entity»
+
+	«ownedAttribute.removeAll(ownedAttribute.select(e | e.name.toLowerCase() == "id"))»
+		
+	«FILE asClientPath("/") + "DTO.java"»
+		package «extractClientPath(".")»;
+
+		import de.ipponsoft.appengine.shared.jpa.interfaces.DTO;
+		
+		public class «this.name.className()»DTO  
+		«IF this.parents().first().name.trim() != null»extends «this.parents().first().asDTO()»«ENDIF»
+		implements DTO {
+		
+			«EXPAND dtoMethodsDTO»
+		
+			«EXPAND idPropertyDTO»
+			
+			«FOREACH ownedAttribute
+					 .reject(e | e.association != null) AS a»
+			«EXPAND simplePropertyDTO FOR a»
+			«ENDFOREACH»
+
+			«FOREACH ownedAttribute
+					 .select(e | e.association != null) AS a»
+			«EXPAND assocPropertyDTO FOR a»
+			«ENDFOREACH»
+						
+		}
+	«ENDFILE»
+«ENDDEFINE»
+
+«REM» ============================================================= «ENDREM»
+«REM» ID Property (Data Transfer)                                   «ENDREM»
+«REM» ============================================================= «ENDREM»
+
+«DEFINE dtoMethodsDTO FOR Class»
+
+	//**************************************
+	// Attribute persistentClassName
+	//**************************************
+
+	public static final String persistentClassName = "«this.asPO()»";
+	
+	public String persistentClassName() {
+		return persistentClassName;
+	}
+
+«ENDDEFINE»
+
+«REM» ============================================================= «ENDREM»
+«REM» ID Property (Data Transfer)                                   «ENDREM»
+«REM» ============================================================= «ENDREM»
+
+«DEFINE idPropertyDTO FOR Class»
+
+	//**************************************
+	// Attribute id
+	//**************************************
+
+	private String id;
+
+	public String getId() {
+		return this.id;
+	}
+	public void setId(String anId) {
+		this.id = anId;
+	}
+
+«ENDDEFINE»
+
+«REM» ============================================================= «ENDREM»
+«REM» Simple Attributes (Data Transfer)                             «ENDREM»
+«REM» ============================================================= «ENDREM»
+
+«DEFINE simplePropertyDTO FOR Property»
+
+	//**************************************
+	// Attribute «name»
+	//**************************************
+
+	private «type.mapType()» «name.camelCase()»;
+	
+	public «type.mapType()» «name.asGetter()» {
+		return this.«name.camelCase()»;
+	}
+	public void «name.asSetter()»(«type.mapType()» «name.asParam()») {
+		this.«name.camelCase()» = «name.asParam()»;
+	}
+
+«ENDDEFINE»
+
+«REM» ============================================================= «ENDREM»
+«REM» Attributes for Associations (Data Transfer)                   «ENDREM»
+«REM» ============================================================= «ENDREM»
+
+«DEFINE assocPropertyDTO FOR Property»
+	//**************************************
+	// Multivalued Attribute «assocName(this)»
+	//**************************************
+
+	private java.util.List<«type.fullClientName()»DTO> «assocName(this).camelCase()» = new java.util.ArrayList<«type.fullClientName()»DTO>();
+	
+	public java.util.List<«type.fullClientName()»DTO> «assocName(this).asGetter()» {
+		return «assocName(this).camelCase()»;
+	}
+	public void «assocName(this).asSetter()»(java.util.List<«type.fullClientName()»DTO> «assocName(this).asParam()») {
+		«assocName(this).camelCase()» = «assocName(this).asParam()»;
+	}	
+	public void «assocName(this).asMultiSetter()»(«type.fullClientName()»DTO «assocName(this).asParam()») {
+		if (!«assocName(this).camelCase()».contains(«assocName(this).asParam()»)) {
+			«assocName(this).camelCase()».add(«assocName(this).asParam()»);
+			«IF (this.getOtherEnd() != null) 
+				&& (this.getOtherEnd().isNavigable())-»
+			«ENDIF-» 
+		}
+	}
+	public void «assocName(this).asMultiRemover()»(«type.fullClientName()»DTO «assocName(this).asParam()») {
+		if («assocName(this).camelCase()».contains(«assocName(this).asParam()»)) {
+			«assocName(this).camelCase()».remove(«assocName(this).asParam()»);
+			«IF (this.getOtherEnd() != null) 
+				&& (this.getOtherEnd().isNavigable())-»
+			«ENDIF-» 
+		}
+	}
+«ENDDEFINE»
+
